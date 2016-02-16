@@ -1,0 +1,77 @@
+// Header Variables
+// ----------
+
+//$header-base-padding: $global-padding
+//$header-base-margin: $global-margin
+//$header-base-black-color: $black
+//
+//$header-phone-color: $header-base-black-color
+//$header-phone-fontsize: $base-xlarge-font-size
+//
+//$main-nav-link-color: $primary-color
+//$main-nav-link-font-size: $base-small-font-size
+//
+//$lang-select-font-size: $base-small-font-size
+//$lang-select-item-margin: $header-base-margin / 4
+//$lang-select-item-padding: rem-calc(5)
+//$lang-select-item-border-radius: rem-calc(5)
+//$lang-select-active-font-color: $header-base-black-color
+//$lang-select-active-background: $color-orange
+
+
+
+
+
+header
+  padding: $header-base-padding 0
+  margin-bottom: $header-base-padding * 2
+  display: flex
+  flex-wrap: wrap
+  align-items: baseline
+
+  .logo
+    margin-right: $header-base-margin
+
+  .phone
+    color: $header-phone-color
+    margin-right: $header-base-margin
+    font-family: $header-phone-font-family
+    font-size: $header-phone-font-size
+    font-weight: bold
+
+  img
+    vertical-align: baseline
+
+  .main-nav
+    flex-grow: 1
+
+.main-nav
+  ul
+    +menu-simple
+    margin: 0
+
+  a
+    color: $main-nav-link-color
+    font-size: $main-nav-link-font-size
+    text-transform: uppercase
+    text-decoration: underline
+
+    &:hover
+      text-decoration: none
+
+.lang-select
+  +menu-simple
+  margin: 0
+  font-size: $lang-select-font-size
+
+  li
+    padding: $lang-select-item-padding
+    border-radius: $lang-select-item-border-radius
+    margin: 0 $lang-select-item-margin
+
+    &.active
+      background: $lang-select-active-background
+
+      a
+        color: $lang-select-active-font-color
+

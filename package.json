@@ -1,0 +1,28 @@
+{
+  "name": "myGulpPack",
+  "version": "1.0.0",
+  "description": "Simple boilerplate Gulp + Rigger + Sass + Compass + LiveReload",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amir Gafurov <gafurovamir@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "es6-promise": "^3.0.2",
+    "gulp": "^3.8.1",
+    "gulp-autoprefixer": "*",
+    "gulp-connect": "*",
+    "gulp-cssmin": "*",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-rigger": "*",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "*",
+    "gulp.spritesmith": "^6.2.0",
+    "gulp-uglify": "*",
+    "gulp-watch": "*",
+    "imagemin-pngquant": "^4.2.0",
+    "opn": "*",
+    "rimraf": "*"
+  }
+}

@@ -1,0 +1,38 @@
+// Aside variables
+// ----------
+
+$side-nav-base-padding: $global-padding / 2
+$side-nav-item-height: $global-padding * 2
+$side-nav-active-item-padding: $side-nav-base-padding / 2
+$side-nav-active-item-border-radius: $side-nav-active-item-padding
+//$side-nav-active-active-font-color: $header-base-black-color
+$side-nav-active-active-background: $color-orange
+$side-nav-active-active-color: $black
+
+.side-nav
+  padding-bottom: $side-nav-base-padding
+
+  .menu
+
+    li
+      min-height: $side-nav-item-height
+
+    a
+      padding: $side-nav-base-padding 0
+
+    .active
+      &:before
+        content: ""
+        display: inline-block
+        vertical-align: middle
+        height: 100%
+      a
+        display: inline-block
+        vertical-align: middle
+        text-decoration: none
+        color: $side-nav-active-active-color
+        padding: $side-nav-active-item-padding
+        border-radius: $side-nav-active-item-border-radius
+        background: $side-nav-active-active-background
+        margin-left: -$side-nav-active-item-padding
+

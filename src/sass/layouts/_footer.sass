@@ -1,0 +1,64 @@
+// Footer Variables
+// ----------
+
+//$footer-background-color: $black2
+//$footer-base-color: $white
+//$footer-base-font-size: $base-medium-font-size
+//$footer-base-line-height: $base-xlarge-font-size
+//$footer-base-padding: $global-padding * 2
+//$footer-base-margin: $global-margin * 2
+//
+//$footer-contacts-phone-font-size: rem-calc(24)
+//$footer-contacts-phone-margin-bottom: $footer-base-margin / 4
+//$footer-contacts-email-margin-bottom: $footer-base-padding
+//$footer-contacts-social-margin-right: $footer-base-margin / 2
+//$footer-contacts-minimap-margin-right: $footer-base-margin / 2
+//$footer-contacts-minimap-font-size: rem-calc(24)
+//$footer-contacts-minimap-margin-bottom: $footer-base-margin / 4
+//$footer-contacts-by-logo-margin-right: $footer-base-margin / 2
+
+footer
+  padding: ($footer-base-padding * 1.5) 0 $footer-base-padding
+  background: $footer-background-color
+  color: $footer-base-color
+  font-size: $footer-base-font-size
+  line-height: $footer-base-line-height
+
+  a
+    color: $footer-base-color
+
+.footer-contacts
+  .phone
+    display: block
+    font-weight: bold
+    font-size: $footer-contacts-phone-font-size
+    line-height: $footer-contacts-phone-font-size
+    margin-bottom: $footer-contacts-phone-margin-bottom
+
+  .email
+    margin-bottom: $footer-contacts-email-margin-bottom
+
+  .social-links
+    font-size: 0
+
+    .icon
+      margin-right: $footer-contacts-social-margin-right
+
+.footer-map
+  .mini-map
+    float: left
+    margin-right: $footer-contacts-minimap-margin-right
+
+  .map-name
+    font-weight: bold
+    font-size: $footer-contacts-minimap-font-size
+    line-height: $footer-contacts-minimap-font-size
+    margin-bottom: $footer-contacts-minimap-margin-bottom
+
+.footer-by
+  .logos
+    a
+      display: inline-block
+      vertical-align: bottom
+      &:first-child
+        margin-right: $footer-contacts-by-logo-margin-right
