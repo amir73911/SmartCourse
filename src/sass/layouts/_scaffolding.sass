@@ -15,6 +15,8 @@ main
 
 h1, h2, h3, h4, h5
   //word-break: break-all
+  &.primed
+    color: $color-orange2
   a
     text-decoration: underline
     color: $color-orange2
@@ -36,8 +38,8 @@ address
 
 main,
 .container
-  padding-left: $global-padding
-  padding-right: $global-padding
+  padding-left: $vertical-gutter
+  padding-right: $vertical-gutter
   max-width: $global-width
   margin: 0 auto
 
@@ -50,13 +52,23 @@ main,
 // Some blocks
 .how-to-call-about
   img
-    margin-bottom: $global-margin * 2
+    margin-bottom: $vertical-gutter * 2
   +breakpoint(medium)
     .plus-img
       margin-top: 45%
     .letter-img
       margin-top: -23%
 
+section
+  margin-bottom: $vertical-gutter * 4
+
+.course-steps
+  h1
+    margin-bottom: $vertical-gutter / 2
+  .columns
+    padding: ($vertical-gutter * 2) 0 $vertical-gutter
+    .icon
+      margin-bottom: $vertical-gutter
 
 // Template with sidebar
 // ----------

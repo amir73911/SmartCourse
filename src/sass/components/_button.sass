@@ -2,15 +2,13 @@
 $button-orange-gradient-color1: #ff7302
 $button-orange-gradient-color2: #f56e3c
 $button-big-font-size: $base-xlarge-font-size
-$button-big-border-radius: rem-calc(5)
 
 .button
   +gradient($button-orange-gradient-color1, $button-orange-gradient-color2)
   text-transform: uppercase
   font-size: $button-big-font-size
   letter-spacing: 1.5px
-  border-radius: $button-big-border-radius
-  +box-shadow(0, 5px, 15px, $button-orange-gradient-color2)
+  +box-shadow(0, 4px, 10px, rgba($button-orange-gradient-color2, 0.6))
   &:hover
     +gradient(scale-color($button-orange-gradient-color1, $lightness: -15%), scale-color($button-orange-gradient-color2, $lightness: -15%))
-    +box-shadow(0, 2px, 10px, scale-color($button-orange-gradient-color2, $lightness: -15%))
+    +box-shadow(0, 0, 3px, scale-color($button-orange-gradient-color2, $lightness: -15%))
