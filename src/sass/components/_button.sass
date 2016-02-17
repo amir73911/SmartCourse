@@ -9,6 +9,23 @@ $button-big-font-size: $base-xlarge-font-size
   font-size: $button-big-font-size
   letter-spacing: 1.5px
   +box-shadow(0, 4px, 10px, rgba($button-orange-gradient-color2, 0.6))
+
+  &.small-btn
+    font-size: rem-calc(15)
+    padding: ($vertical-gutter / 2) $vertical-gutter
+    border-radius: rem-calc(6)
+
   &:hover
     +gradient(scale-color($button-orange-gradient-color1, $lightness: -15%), scale-color($button-orange-gradient-color2, $lightness: -15%))
     +box-shadow(0, 0, 3px, scale-color($button-orange-gradient-color2, $lightness: -15%))
+
+.button-with-caption
+  margin-bottom: $vertical-gutter
+  .button
+    vertical-align: middle
+    margin-bottom: 0
+  .caption
+    display: inline-block
+    vertical-align: middle
+    text-transform: uppercase
+    font-size: $base-small-font-size

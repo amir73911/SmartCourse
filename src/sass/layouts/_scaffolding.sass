@@ -17,6 +17,11 @@ h1, h2, h3, h4, h5
   //word-break: break-all
   &.primed
     color: $color-orange2
+  span
+    font-family: $base-sans-font
+    font-size: rem-calc(15)
+    display: block
+    padding: ($vertical-gutter / 2) 0
   a
     text-decoration: underline
     color: $color-orange2
@@ -66,9 +71,36 @@ section
   h1
     margin-bottom: $vertical-gutter / 2
   .columns
-    padding: ($vertical-gutter * 2) 0 $vertical-gutter
+    padding:
+      top: ($vertical-gutter * 2)
+      bottom: $vertical-gutter
     .icon
       margin-bottom: $vertical-gutter
+
+.roma-digit
+  color: $color-orange2
+  font-weight: bold
+  font-family: $base-serif-font
+  font-size: rem-calc(60)
+
+.page-selector
+  text-align: center
+  margin-bottom: $vertical-gutter * 4
+  font-size: $base-xlarge-font-size
+  font-family: $base-serif-font
+  font-weight: bold
+  a
+    text-decoration: underline
+    display: inline-block
+    vertical-align: baseline
+    &.active
+      text-decoration: none
+      color: inherit
+      padding: 0 ($vertical-gutter / 2)
+      border-radius: $global-radius
+      background: $color-orange
+
+
 
 // Template with sidebar
 // ----------

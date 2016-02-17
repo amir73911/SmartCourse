@@ -4,4 +4,4 @@
 
 $(document).foundation();
 
-//= partials/app.js
+//= partials/vtabs.js
