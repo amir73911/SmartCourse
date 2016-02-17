@@ -1,0 +1,34 @@
+.faq
+
+  .questions
+    padding: ($vertical-gutter / 2) 0
+    li
+      font-size: $base-small-font-size
+      padding-bottom: 1em
+      position: relative
+      &.active:before
+        content: ""
+        display: block
+        position: absolute
+        left: -$hand-width - 10px
+        top: 3px
+        +sprite($hand)
+
+      a
+        color: $black
+        &:hover
+          text-decoration: underline
+
+  .answers
+
+    .answer
+      padding-bottom: 1em
+      &.active
+        .answer-title
+          color: $color-orange2
+
+    .answer-title
+      font-family: $base-serif-font
+      font-style: italic
+      font-weight: bold
+      font-size: $base-xlarge-font-size

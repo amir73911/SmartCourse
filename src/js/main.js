@@ -5,3 +5,4 @@
 $(document).foundation();
 
 //= partials/vtabs.js
+//= partials/faq.js
