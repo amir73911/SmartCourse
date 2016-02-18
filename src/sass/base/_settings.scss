@@ -109,6 +109,7 @@ $warning-color: #ffae00;
 $alert-color: #ec5840;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
+$medium-gray2: #999;
 $dark-gray: #8a8a8a;
 $darker-gray: #4d4d4d;
 $darkest-gray: #323232;
@@ -367,7 +368,7 @@ $dropdownmenu-border: 1px solid $medium-gray;
 // 18. Flex Video
 // --------------
 
-$flexvideo-margin-bottom: rem-calc(16);
+$flexvideo-margin-bottom: 0;
 $flexvideo-ratio: 4 by 3;
 $flexvideo-ratio-widescreen: 16 by 9;
 

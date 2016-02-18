@@ -65,7 +65,7 @@ gulp.task('style:build', function () {
     gulp.src(path.src.style)
         //.pipe(sourcemaps.init())
         .pipe(sass({errLogToConsole: true}))
-        .pipe(prefixer())
+        //.pipe(prefixer())
         //.pipe(cssmin())
         //.pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css))

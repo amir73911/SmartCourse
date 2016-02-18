@@ -1,0 +1,30 @@
+.review
+  padding-bottom: $vertical-gutter * 2
+
+.review-image
+  margin-bottom: $vertical-gutter
+
+.review-name
+  margin-bottom: $vertical-gutter
+  h5
+    margin-bottom: 0
+
+.review-text
+  position: relative
+
+  &:before,
+  &:after
+    content: "«"
+    font-family: $base-serif-font
+    font-size: rem-calc(36)
+    font-weight: bold
+    position: absolute
+
+  &:before
+    top: -20px
+    left: -30px
+
+  &:after
+    content: "»"
+    bottom: -20px
+    right: -30px

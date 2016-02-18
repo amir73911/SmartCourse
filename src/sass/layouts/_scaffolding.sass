@@ -15,6 +15,10 @@ main
 
 h1, h2, h3, h4, h5
   //word-break: break-all
+  &.small-margin
+    margin-bottom: .1em
+  &.big-margin
+    margin-bottom: 2em
   &.primed
     color: $color-orange2
   span
@@ -29,8 +33,13 @@ h1, h2, h3, h4, h5
       color: $color-orange2
       text-decoration: none
 
+.global-margin
+  margin-bottom: $vertical-gutter
+
 img
   display: inline-block
+  &.wide
+    width: 100%
 
 a.link-reverse
   text-decoration: underline
@@ -115,6 +124,13 @@ section
     text-transform: uppercase
     font-size: $base-small-font-size
     letter-spacing: 1.4px
+
+.small-caption
+  color: $medium-gray2
+  font-size: $base-small-font-size
+
+.content-block
+  margin-bottom: $vertical-gutter / 2
 
 .small-input
   height: $vertical-gutter * 1.6
