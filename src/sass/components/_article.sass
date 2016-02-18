@@ -1,0 +1,64 @@
+.article
+  padding-bottom: $vertical-gutter * 4
+
+.article-image
+  margin-bottom: $vertical-gutter
+
+  img
+    width: 100%
+
+.article-by
+  margin-bottom: $vertical-gutter
+
+.article-read-more
+  display: inline-block
+  text-decoration: underline
+  font-family: $base-serif-font
+  font-size: $base-xlarge-font-size
+  font-weight: bold
+  margin-bottom: $vertical-gutter * 1.5
+
+.article-tags
+  .tag
+    font-size: $base-small-font-size
+    text-transform: uppercase
+    &:last-child:after
+      display: none
+    &:after
+      content: ","
+
+.article-share
+  *
+    box-sizing: content-box
+
+.articles-pagination
+  .prev
+    float: left
+    &:before
+      content: ""
+      display: inline-block
+      vertical-align: middle
+      margin-right: $vertical-gutter / 2
+      +sprite($larr)
+
+  .next
+    float: right
+    &:after
+      content: ""
+      display: inline-block
+      vertical-align: middle
+      margin-left: $vertical-gutter / 2
+      +sprite($rarr)
+
+.article-author
+  padding: ($vertical-gutter / 2) 0
+  .article-author-image
+    margin-bottom: $vertical-gutter / 2
+  .article-author-post
+    font-size: $base-small-font-size
+
+.articles-best
+  .menu
+    a
+      color: $color-orange2
+      padding: ($vertical-gutter / 2) 0

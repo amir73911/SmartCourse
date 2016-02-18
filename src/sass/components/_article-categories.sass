@@ -1,0 +1,31 @@
+$article-categories-border-color: $color-brown
+$article-categories-title-font-family: $base-serif-font
+$article-categories-title-font-size: $base-xlarge-font-size
+$article-categories-link-active-color: $primary-color2
+
+.article-categories
+  border-bottom: 1px solid $article-categories-border-color
+  li
+    padding-bottom: $vertical-gutter
+    &.active
+      a
+        color: $article-categories-link-active-color
+        &:before
+          content: ""
+          position: absolute
+          left: -$check-width - 5px
+          top: 0
+          display: block
+          +sprite($check)
+
+  a
+    position: relative
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+
+  .article-categories-title
+    padding-bottom: $vertical-gutter / 2
+    font-family: $article-categories-title-font-family
+    font-size: $article-categories-title-font-size
+    font-weight: bold

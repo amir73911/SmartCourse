@@ -10,17 +10,28 @@
   At the bottom of this section, we provide information about the spritesheet itself
   $spritesheet: width height image $spritesheet-sprites
   */
+$check-name: 'check'
+$check-x: 215px
+$check-y: 130px
+$check-offset-x: -215px
+$check-offset-y: -130px
+$check-width: 8px
+$check-height: 15px
+$check-total-width: 231px
+$check-total-height: 230px
+$check-image: 'sprite.png'
+$check: (215px, 130px, -215px, -130px, 8px, 15px, 231px, 230px, 'sprite.png', 'check', )
 $fb-name: 'fb'
-$fb-x: 0px
+$fb-x: 64px
 $fb-y: 198px
-$fb-offset-x: 0px
+$fb-offset-x: -64px
 $fb-offset-y: -198px
 $fb-width: 32px
 $fb-height: 32px
 $fb-total-width: 231px
 $fb-total-height: 230px
 $fb-image: 'sprite.png'
-$fb: (0px, 198px, 0px, -198px, 32px, 32px, 231px, 230px, 'sprite.png', 'fb', )
+$fb: (64px, 198px, -64px, -198px, 32px, 32px, 231px, 230px, 'sprite.png', 'fb', )
 $hand-name: 'hand'
 $hand-x: 98px
 $hand-y: 148px
@@ -87,6 +98,17 @@ $ix-total-width: 231px
 $ix-total-height: 230px
 $ix-image: 'sprite.png'
 $ix: (0px, 98px, 0px, -98px, 82px, 50px, 231px, 230px, 'sprite.png', 'ix', )
+$larr-name: 'larr'
+$larr-x: 197px
+$larr-y: 148px
+$larr-offset-x: -197px
+$larr-offset-y: -148px
+$larr-width: 21px
+$larr-height: 9px
+$larr-total-width: 231px
+$larr-total-height: 230px
+$larr-image: 'sprite.png'
+$larr: (197px, 148px, -197px, -148px, 21px, 9px, 231px, 230px, 'sprite.png', 'larr', )
 $metro-name: 'metro'
 $metro-x: 148px
 $metro-y: 148px
@@ -98,17 +120,39 @@ $metro-total-width: 231px
 $metro-total-height: 230px
 $metro-image: 'sprite.png'
 $metro: (148px, 148px, -148px, -148px, 28px, 20px, 231px, 230px, 'sprite.png', 'metro', )
+$rarr-name: 'rarr'
+$rarr-x: 176px
+$rarr-y: 148px
+$rarr-offset-x: -176px
+$rarr-offset-y: -148px
+$rarr-width: 21px
+$rarr-height: 9px
+$rarr-total-width: 231px
+$rarr-total-height: 230px
+$rarr-image: 'sprite.png'
+$rarr: (176px, 148px, -176px, -148px, 21px, 9px, 231px, 230px, 'sprite.png', 'rarr', )
+$search-btn-name: 'searchBtn'
+$search-btn-x: 199px
+$search-btn-y: 130px
+$search-btn-offset-x: -199px
+$search-btn-offset-y: -130px
+$search-btn-width: 16px
+$search-btn-height: 16px
+$search-btn-total-width: 231px
+$search-btn-total-height: 230px
+$search-btn-image: 'sprite.png'
+$search-btn: (199px, 130px, -199px, -130px, 16px, 16px, 231px, 230px, 'sprite.png', 'searchBtn', )
 $tw-name: 'tw'
-$tw-x: 199px
-$tw-y: 98px
-$tw-offset-x: -199px
-$tw-offset-y: -98px
+$tw-x: 32px
+$tw-y: 198px
+$tw-offset-x: -32px
+$tw-offset-y: -198px
 $tw-width: 32px
 $tw-height: 32px
 $tw-total-width: 231px
 $tw-total-height: 230px
 $tw-image: 'sprite.png'
-$tw: (199px, 98px, -199px, -98px, 32px, 32px, 231px, 230px, 'sprite.png', 'tw', )
+$tw: (32px, 198px, -32px, -198px, 32px, 32px, 231px, 230px, 'sprite.png', 'tw', )
 $v-name: 'v'
 $v-x: 143px
 $v-y: 98px
@@ -154,16 +198,16 @@ $viii-total-height: 230px
 $viii-image: 'sprite.png'
 $viii: (0px, 0px, 0px, 0px, 145px, 49px, 231px, 230px, 'sprite.png', 'viii', )
 $vk-name: 'vk'
-$vk-x: 32px
+$vk-x: 0px
 $vk-y: 198px
-$vk-offset-x: -32px
+$vk-offset-x: 0px
 $vk-offset-y: -198px
 $vk-width: 32px
 $vk-height: 32px
 $vk-total-width: 231px
 $vk-total-height: 230px
 $vk-image: 'sprite.png'
-$vk: (32px, 198px, -32px, -198px, 32px, 32px, 231px, 230px, 'sprite.png', 'vk', )
+$vk: (0px, 198px, 0px, -198px, 32px, 32px, 231px, 230px, 'sprite.png', 'vk', )
 $x-name: 'x'
 $x-x: 0px
 $x-y: 148px
@@ -176,20 +220,20 @@ $x-total-height: 230px
 $x-image: 'sprite.png'
 $x: (0px, 148px, 0px, -148px, 52px, 50px, 231px, 230px, 'sprite.png', 'x', )
 $yt-name: 'yt'
-$yt-x: 64px
-$yt-y: 198px
-$yt-offset-x: -64px
-$yt-offset-y: -198px
+$yt-x: 199px
+$yt-y: 98px
+$yt-offset-x: -199px
+$yt-offset-y: -98px
 $yt-width: 32px
 $yt-height: 32px
 $yt-total-width: 231px
 $yt-total-height: 230px
 $yt-image: 'sprite.png'
-$yt: (64px, 198px, -64px, -198px, 32px, 32px, 231px, 230px, 'sprite.png', 'yt', )
+$yt: (199px, 98px, -199px, -98px, 32px, 32px, 231px, 230px, 'sprite.png', 'yt', )
 $spritesheet-width: 231px
 $spritesheet-height: 230px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: ($fb, $hand, $i, $ii, $iii, $iv, $ix, $metro, $tw, $v, $vi, $vii, $viii, $vk, $x, $yt, )
+$spritesheet-sprites: ($check, $fb, $hand, $i, $ii, $iii, $iv, $ix, $larr, $metro, $rarr, $search-btn, $tw, $v, $vi, $vii, $viii, $vk, $x, $yt, )
 $spritesheet: (231px, 230px, 'sprite.png', $spritesheet-sprites, )
 
 /*
