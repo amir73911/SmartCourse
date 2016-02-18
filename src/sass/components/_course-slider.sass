@@ -1,0 +1,93 @@
+$course-slider-padding-vertical: $vertical-gutter * 2.5
+$course-slider-padding-horizontal: $vertical-gutter * 2.5
+$course-slider-base-color: $white
+$course-slider-base-font-family: $base-serif-font
+$course-slider-slide-title-font-size: rem-calc(60)
+$course-slider-slide-caption-font-size: $base-xlarge-font-size
+$course-slider-counters-background: $darkest-gray
+$course-slider-counters-height: rem-calc(56)
+$course-slider-progress-background: $darker-gray
+$course-slider-progress-color: $primary-color
+$course-slider-progress-height: rem-calc(6)
+
+.course-slider
+  color: $course-slider-base-color
+
+.course-slider-inner
+  background: $color-orange2
+  .facts
+    span
+      font-size: $course-slider-slide-title-font-size
+
+.course-slider-item
+  padding:
+    top: $course-slider-padding-vertical
+    bottom: $course-slider-padding-vertical
+    left: $course-slider-padding-horizontal
+    right: $course-slider-padding-horizontal
+
+.course-slider-item-title
+  font-family: $course-slider-base-font-family
+  font-size: $course-slider-slide-title-font-size
+  font-weight: bold
+
+.course-slider-item-caption
+  font-family: $course-slider-base-font-family
+  font-size: $course-slider-slide-caption-font-size
+
+.course-slider-counters
+  background: $course-slider-counters-background
+  border-top: 1px solid $course-slider-counters-background
+  height: $course-slider-counters-height
+
+.course-slider-progress
+  background: $darker-gray
+  height: $course-slider-progress-height
+  position: relative
+
+  span
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 0
+    height: $course-slider-progress-height
+    background: $course-slider-progress-color
+
+.course-slider-navs
+  text-align: center
+  font-size: 0
+
+  .owl-prev,
+  .owl-next,
+  .course-slider-index
+    user-select: none
+    display: inline-block
+    vertical-align: middle
+    line-height: $course-slider-counters-height - $course-slider-progress-height
+
+  .course-slider-index
+    font-size: $base-medium-font-size
+    width: 50px
+
+  .owl-prev,
+  .owl-next
+    cursor: pointer
+    font-size: 0
+    position: relative
+    padding: 0 $vertical-gutter
+    &.disabled
+      opacity: 0.5
+
+  .owl-prev
+    &:before
+      +css-triangle(10px, $course-slider-base-color, left)
+      display: inline-block
+      vertical-align: middle
+
+  .owl-next
+    &:before
+      +css-triangle(10px, $course-slider-base-color, right)
+      display: inline-block
+      vertical-align: middle
+
