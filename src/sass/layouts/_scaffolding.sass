@@ -51,11 +51,11 @@ address
   font-style: normal
 
 main,
+section,
 .container
-  padding-left: $vertical-gutter
-  padding-right: $vertical-gutter
-  max-width: $global-width
-  margin: 0 auto
+  +grid-col-row()
+  float: none !important
+  +clearfix
 
 .content
   font-size: rem-calc(15)
@@ -75,6 +75,11 @@ main,
 
 section
   margin-bottom: $vertical-gutter * 4
+  &.wide
+    max-width: rem-calc(1200)
+    padding:
+      left: 0
+      right: 0
 
 .course-steps
   h1
