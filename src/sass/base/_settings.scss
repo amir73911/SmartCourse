@@ -95,7 +95,7 @@ $global-margin: rem-calc($rem-base);
 $global-padding: rem-calc($rem-base);
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: rem-calc(3);
+$global-radius: rem-calc(5);
 $global-text-direction: ltr;
 
 $global-font-size: 100%;
@@ -103,6 +103,7 @@ $global-width: rem-calc(980) + ($global-margin * 2);
 $global-lineheight: 1.5;
 $primary-color: #29a3f9;
 $primary-color2: #0074c5;
+$primary-color3: #4db5ff;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;

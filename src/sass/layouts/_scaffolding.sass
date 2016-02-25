@@ -15,6 +15,7 @@ main
 
 h1, h2, h3, h4, h5
   //word-break: break-all
+  letter-spacing: 1px
   &.small-margin
     margin-bottom: .1em
   &.big-margin
@@ -40,12 +41,18 @@ img
   display: inline-block
   &.wide
     width: 100%
-
-a.link-reverse
-  text-decoration: underline
+a
   &:hover
+    color: $primary-color3
+  &.link-inner // Внутренние ссылки
     text-decoration: none
-    color: inherit
+    border-bottom: 1px dashed $primary-color
+    &:hover
+      border-bottom: none
+  &.link-reverse
+    text-decoration: underline
+    &:hover
+      text-decoration: none
 
 address
   font-style: normal
