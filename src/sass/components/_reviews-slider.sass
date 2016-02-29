@@ -1,0 +1,53 @@
+$review-slider-main-item-padding-vertical: $vertical-gutter * 7
+$review-slider-main-item-padding-horizontal: $vertical-gutter * 4
+
+.reviews-slider
+  background: $black
+
+.reviews-slider-main-item
+  padding:
+    top: $review-slider-main-item-padding-vertical
+    bottom: $review-slider-main-item-padding-vertical
+    left: $review-slider-main-item-padding-horizontal
+    right: $review-slider-main-item-padding-horizontal
+  background: no-repeat center top
+  background-size: cover
+
+  .review-text
+    font-family: $base-serif-font
+    font-size: $base-xlarge-font-size
+
+  .image-for-thumb
+    display: none !important
+
+.review-slider-name
+  @extend h2
+  margin-bottom: $vertical-gutter / 2
+
+.review-slider-caption
+  margin-bottom: $vertical-gutter * 2
+
+
+.reviews-slider-thumb
+  height: $vertical-gutter * 3.5
+  text-align: center
+
+  .owl-thumb-item
+    max-height: 100%
+    width: 10%
+    display: inline-block
+    vertical-align: middle
+    overflow: hidden
+    border-radius: 0
+    margin: rem-calc(3) rem-calc(2)
+    outline: none
+
+    &.active
+      border: 2px solid $medium-gray2
+      img
+        opacity: 1
+
+    img
+      max-height: 100%
+      opacity: .7
+      transition: opacity $base-transition ease

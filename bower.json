@@ -12,6 +12,7 @@
   ],
   "dependencies": {
     "foundation-sites": "^6.1.2",
-    "owl.carousel": "^2.0.0-beta.3"
+    "owl.carousel": "^2.0.0-beta.3",
+    "owl.carousel2.thumbs": "^0.1.7"
   }
 }

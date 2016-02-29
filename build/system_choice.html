@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    //= template/metatags.html
-    //= template/styles.html
-    //= template/scripts.html
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Awesome Description Here">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>Smart Course</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="js/main.js"></script>
 </head>
 <body>
 
-//= template/header.html
+<header>
+    <div class="container">
+        <a class="logo" href="index.html"><img src="images/logo.png" alt="Smart Course"></a>
+        <a class="phone" href="tel:+74952013595">+7 495 201-35-95</a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Мероприятия</a></li>
+                <li><a href="#">Онлайн</a></li>
+                <li><a href="b2b.html">B2B</a></li>
+                <li><a href="agency.html">Представители</a></li>
+                <li><a href="vacantions.html">Вакансии</a></li>
+                <li><a href="knowledge_base.html">База знаний</a></li>
+            </ul>
+        </nav>
+        <ul class="lang-select">
+            <li class="active"><a href="#">Русский</a></li>
+            <li><a href="#">English</a></li>
+        </ul>
+    </div>
+</header>
 
 <section>
 
@@ -246,6 +268,38 @@
 
 </section>
 
-//= template/footer.html
+<footer>
+    <div class="container row">
+        <div class="row">
+            <div class="footer-contacts columns medium-3">
+                <div class="phone"><a href="tel:+74952013595">+7 495 201 35 95</a></div>
+                <div class="email">Почта: <a class="link-reverse" href="mailto:start@smartcourse.ru" >start@smartcourse.ru</a></div>
+                <div class="social-links">
+                    <a href="#" target="_blank" class="icon icon-vk"></a>
+                    <a href="#" target="_blank" class="icon icon-tw"></a>
+                    <a href="#" target="_blank" class="icon icon-fb"></a>
+                    <a href="#" target="_blank" class="icon icon-yt"></a>
+                </div>
+            </div>
+            <div class="footer-map columns medium-6">
+                <a href="#" class="mini-map"><img src="images/mini-map.png" alt="map"></a>
+                <div class="map-name">
+                    <i class="icon icon-metro"></i> Павелецкая
+                </div>
+                <p>Садовническая улица 76/71, строение 1</p>
+            </div>
+            <div class="footer-by columns medium-3">
+                <p>
+                    Cпроектировано и реализовано <a href="#" class="link-reverse">Бракодельней</a> и
+                    <a href="#" class="link-reverse">ЛидМашиной</a>
+                </p>
+                <div class="logos">
+                    <a href="#"><img src="images/br-logo.png" alt="Бракодельня"></a>
+                    <a href="#"><img src="images/lid-logo.png" alt="Лидмашина"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
