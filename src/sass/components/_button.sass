@@ -1,6 +1,8 @@
 // Button variables
 $button-orange-gradient-color1: #f56e3c
 $button-orange-gradient-color2: #fa5214
+$button-blue-gradient-color1: #66c0f9
+$button-blue-gradient-color2: #2a97db
 $button-big-font-size: $base-xlarge-font-size
 
 .button
@@ -8,16 +10,27 @@ $button-big-font-size: $base-xlarge-font-size
   text-transform: uppercase
   font-size: $button-big-font-size
   letter-spacing: 1.5px
-  +box-shadow(0, 3px, 4px, rgba($button-orange-gradient-color2, 0.8))
+  transition: box-shadow $base-transition ease
+  +box-shadow(0, 3px, 4px, rgba($button-orange-gradient-color2, 0.4))
 
   &.small-btn
     font-size: rem-calc(15)
     padding: ($vertical-gutter / 2) $vertical-gutter
     border-radius: rem-calc(6)
 
+  &.lower-btn
+    text-transform: lowercase
+
+  &.blue-btn
+    +gradient($button-blue-gradient-color1, $button-blue-gradient-color2)
+    +box-shadow(0, 3px, 4px, rgba($button-blue-gradient-color2, 0.4))
+    &:hover
+      background: $button-blue-gradient-color2
+
+
   &:hover
-    +gradient(scale-color($button-orange-gradient-color1, $lightness: -15%), scale-color($button-orange-gradient-color2, $lightness: -15%))
-    +box-shadow(0, 0, 3px, scale-color($button-orange-gradient-color2, $lightness: -15%))
+    background: $button-orange-gradient-color2
+    box-shadow: none
 
 .button-with-caption
   margin-bottom: $vertical-gutter
