@@ -1628,10 +1628,10 @@ textarea {
   -moz-appearance: none; }
   [type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus,
   textarea:focus {
-    border: 1px solid #8a8a8a;
+    border: 1px solid #baa788;
     background-color: #fff;
     outline: none;
-    box-shadow: 0 0 5px #cacaca;
+    box-shadow: 0 0 7px #cacaca;
     transition: box-shadow 0.5s, border-color 0.25s ease-in-out; }
 
 textarea {
@@ -2112,22 +2112,22 @@ select {
   vertical-align: middle; }
   .icon.icon-vk {
     background-image: url(../images/sprite.png);
-    background-position: -198px -148px;
+    background-position: -199px -98px;
     width: 32px;
     height: 32px; }
   .icon.icon-tw {
     background-image: url(../images/sprite.png);
-    background-position: -199px -98px;
+    background-position: -198px -148px;
     width: 32px;
     height: 32px; }
   .icon.icon-fb {
     background-image: url(../images/sprite.png);
-    background-position: -231px -147px;
+    background-position: -276px 0px;
     width: 32px;
     height: 32px; }
   .icon.icon-yt {
     background-image: url(../images/sprite.png);
-    background-position: -276px 0px;
+    background-position: -231px -147px;
     width: 32px;
     height: 32px; }
   .icon.icon-metro {
@@ -2192,22 +2192,22 @@ select {
     height: 26px; }
   .icon.icon-search-btn {
     background-image: url(../images/sprite.png);
-    background-position: -276px -52px;
+    background-position: -276px -72px;
     width: 16px;
     height: 16px; }
   .icon.icon-check {
     background-image: url(../images/sprite.png);
-    background-position: -292px -52px;
+    background-position: -294px -52px;
     width: 8px;
     height: 15px; }
   .icon.icon-larr {
     background-image: url(../images/sprite.png);
-    background-position: -276px -77px;
+    background-position: -276px -97px;
     width: 21px;
     height: 9px; }
   .icon.icon-rarr {
     background-image: url(../images/sprite.png);
-    background-position: -276px -68px;
+    background-position: -276px -88px;
     width: 21px;
     height: 9px; }
   .icon.icon-icon1 {
@@ -2250,6 +2250,21 @@ select {
     background-position: -46px -198px;
     width: 48px;
     height: 45px; }
+  .icon.icon-visa {
+    background-image: url(../images/sprite.png);
+    background-position: -231px -179px;
+    width: 40px;
+    height: 13px; }
+  .icon.icon-mastercard {
+    background-image: url(../images/sprite.png);
+    background-position: -240px -198px;
+    width: 36px;
+    height: 22px; }
+  .icon.icon-yd {
+    background-image: url(../images/sprite.png);
+    background-position: -276px -52px;
+    width: 18px;
+    height: 20px; }
 
 .side-nav {
   padding-bottom: 0.5rem; }
@@ -2460,7 +2475,7 @@ select {
         top: 0;
         display: block;
         background-image: url(../images/sprite.png);
-        background-position: -292px -52px;
+        background-position: -294px -52px;
         width: 8px;
         height: 15px; }
   .article-categories a {
@@ -2512,7 +2527,7 @@ select {
     vertical-align: middle;
     margin-right: 0.5rem;
     background-image: url(../images/sprite.png);
-    background-position: -276px -77px;
+    background-position: -276px -97px;
     width: 21px;
     height: 9px; }
 
@@ -2524,7 +2539,7 @@ select {
     vertical-align: middle;
     margin-left: 0.5rem;
     background-image: url(../images/sprite.png);
-    background-position: -276px -68px;
+    background-position: -276px -88px;
     width: 21px;
     height: 9px; }
 
@@ -2739,6 +2754,8 @@ section,
 
 section {
   margin-bottom: 4rem; }
+  section.no-margin {
+    margin-bottom: 0; }
   section.section-back-1 {
     background: url("../images/backs/1.jpg") center top no-repeat; }
   section.wide {
@@ -2817,7 +2834,7 @@ section {
     padding: 0;
     font-size: 0;
     background-image: url(../images/sprite.png);
-    background-position: -276px -52px;
+    background-position: -276px -72px;
     width: 16px;
     height: 16px; }
 
@@ -2956,22 +2973,62 @@ footer {
 .contact-form {
   text-align: center;
   border: 2px solid #f26b3e;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   padding-top: 3rem;
   padding-right: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   padding-left: 1rem; }
+  .contact-form.small-margin {
+    margin-bottom: 1rem; }
   .contact-form h2, .contact-form .review-slider-name, .contact-form .event-title {
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 0.5rem; }
   .contact-form form {
-    padding-right: 6rem;
+    padding-right: 4rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-left: 6rem;
+    padding-left: 4rem;
     text-align: left; }
   .contact-form .button {
     margin: 1rem 0; }
+  .contact-form .small-width-input {
+    width: 20%;
+    display: inline-block; }
+  .contact-form .small-width-input + label {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: inline-block; }
+  .contact-form .ticket-choose {
+    margin-bottom: 2rem; }
+    .contact-form .ticket-choose .ticket-choose-item {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      padding: 0.33333rem 0.5rem;
+      color: #000;
+      border-radius: 0.3125rem;
+      border: 1px solid #baa788;
+      text-align: center;
+      transition: background 0.3s ease; }
+      .contact-form .ticket-choose .ticket-choose-item:hover {
+        background: rgba(245, 227, 197, 0.6); }
+      .contact-form .ticket-choose .ticket-choose-item.active {
+        border-color: #f5e3c5;
+        background: #f5e3c5; }
+  .contact-form .calculated-price,
+  .contact-form .ticket-price {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: "Jannon";
+    font-weight: bold;
+    color: #f26b3e; }
+  .contact-form .ticket-caption {
+    text-align: left;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+    .contact-form .ticket-caption .ticket-caption-title {
+      text-transform: uppercase;
+      font-size: 0.8125rem; }
 
 .big-banner {
   margin-left: auto;
