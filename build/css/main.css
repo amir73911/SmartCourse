@@ -2646,7 +2646,7 @@ h1.small-margin, .price-list .small-margin.price, h2.small-margin, .small-margin
   margin-bottom: .1em; }
 
 h1.big-margin, .price-list .big-margin.price, h2.big-margin, .big-margin.review-slider-name, .big-margin.event-title, h3.big-margin, h4.big-margin, h5.big-margin {
-  margin-bottom: 2em; }
+  margin-bottom: 1em; }
 
 h1.primed, .price-list .primed.price, h2.primed, .primed.review-slider-name, .primed.event-title, h3.primed, h4.primed, h5.primed {
   color: #f26b3e; }
@@ -2876,7 +2876,7 @@ section {
 
 header {
   padding: 1rem 0;
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
   header .container {
     display: flex;
     flex-wrap: wrap;
@@ -3128,3 +3128,16 @@ footer {
     vertical-align: baseline; }
   .date-address .button {
     margin-top: 1rem; }
+
+.black-head-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden; }
+  .black-head-block section {
+    background: url("../images/content/questions.jpg") center top no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 0; }

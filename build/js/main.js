@@ -9325,6 +9325,15 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
 
+    var $blackHeadBlock = $('.black-head-block'),
+        blackHeadBlockHeight = $blackHeadBlock.height();
+
+    $(document).scroll(function () {
+
+        $blackHeadBlock.css('height', blackHeadBlockHeight - ($(window).scrollTop() * 4) );
+
+    });
+
     var $courseImageScroller = $('.course-image-scroller'),
         $courseImageScrollerImg = $courseImageScroller.find('img'),
         containerOffset,
