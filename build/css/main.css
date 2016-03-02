@@ -2631,6 +2631,11 @@ select {
     color: #baa788;
     background: rgba(186, 167, 136, 0.1); }
 
+.course-image-scroller {
+  overflow: hidden; }
+  .course-image-scroller img {
+    max-width: none; }
+
 * {
   box-sizing: border-box; }
 
