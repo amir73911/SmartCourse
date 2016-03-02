@@ -2636,6 +2636,15 @@ select {
   .course-image-scroller img {
     max-width: none; }
 
+.main-message {
+  text-align: center;
+  font-family: "Jannon";
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: 1px solid #f26b3e;
+  border-radius: 0.3125rem;
+  margin-bottom: 2rem; }
+
 * {
   box-sizing: border-box; }
 
@@ -2694,7 +2703,8 @@ address {
 
 main,
 section,
-.container {
+.container,
+.main-message {
   max-width: 63.25rem;
   margin-left: auto;
   margin-right: auto;
@@ -2707,39 +2717,49 @@ section,
   section::before,
   section::after,
   .container::before,
-  .container::after {
+  .main-message::before,
+  .container::after,
+  .main-message::after {
     content: ' ';
     display: table; }
   main::after,
   section::after,
-  .container::after {
+  .container::after,
+  .main-message::after {
     clear: both; }
   @media screen and (min-width: 40em) {
     main,
     section,
-    .container {
+    .container,
+    .main-message {
       padding-left: 0.625rem;
       padding-right: 0.625rem; } }
   main:last-child:not(:first-child),
   section:last-child:not(:first-child),
-  .container:last-child:not(:first-child) {
+  .container:last-child:not(:first-child),
+  .main-message:last-child:not(:first-child) {
     float: right; }
   main, main:last-child,
   section,
   section:last-child,
   .container,
-  .container:last-child {
+  .main-message,
+  .container:last-child,
+  .main-message:last-child {
     float: none; }
   main::before, main::after,
   section::before,
   section::after,
   .container::before,
-  .container::after {
+  .main-message::before,
+  .container::after,
+  .main-message::after {
     content: ' ';
     display: table; }
   main::after,
   section::after,
-  .container::after {
+  .container::after,
+  .main-message::after {
     clear: both; }
 
 .content {
@@ -2877,7 +2897,7 @@ section {
 header {
   padding: 1rem 0;
   margin-bottom: 1rem; }
-  header .container {
+  header .container, header .main-message {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline; }
