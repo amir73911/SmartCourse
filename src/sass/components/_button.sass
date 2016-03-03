@@ -4,6 +4,8 @@ $button-orange-gradient-color2: #fa5214
 $button-blue-gradient-color1: #66c0f9
 $button-blue-gradient-color2: #2a97db
 $button-big-font-size: $base-xlarge-font-size
+$button-gradient-size: 10px
+$button-gradient-opacity: 0.7
 
 .button
   font-family: $base-sans-font
@@ -12,7 +14,7 @@ $button-big-font-size: $base-xlarge-font-size
   font-size: $button-big-font-size
   letter-spacing: 1.5px
   transition: box-shadow $base-transition ease
-  +box-shadow(0, 3px, 4px, rgba($button-orange-gradient-color2, 0.4))
+  +box-shadow(0, 3px, $button-gradient-size, rgba($button-orange-gradient-color2, $button-gradient-opacity))
 
   &.small-btn
     font-size: rem-calc(15)
@@ -24,7 +26,7 @@ $button-big-font-size: $base-xlarge-font-size
 
   &.blue-btn
     +gradient($button-blue-gradient-color1, $button-blue-gradient-color2)
-    +box-shadow(0, 3px, 4px, rgba($button-blue-gradient-color2, 0.4))
+    +box-shadow(0, 3px, $button-gradient-size, rgba($button-blue-gradient-color2, $button-gradient-opacity))
     &:hover
       background: $button-blue-gradient-color2
 
@@ -39,7 +41,7 @@ $button-big-font-size: $base-xlarge-font-size
     vertical-align: middle
     margin-bottom: 0
   .caption
+    padding: 0 ($vertical-gutter / 2)
     display: inline-block
-    vertical-align: middle
     text-transform: uppercase
     font-size: $base-small-font-size
