@@ -4,13 +4,25 @@
     bottom: $vertical-gutter
 
   &.white
-
     .tag
       color: $white
       border-color: $white
       &:hover
         color: $white
         background: rgba($white, .1)
+
+  &.small
+    padding:
+      top: $vertical-gutter / 2
+      bottom: $vertical-gutter / 2
+    .tag
+      font-size: $base-small-font-size
+      text-transform: uppercase
+      line-height: $base-font-size
+
+  &.black-font
+    .tag
+      color: $black
 
 .tag
   display: inline-block

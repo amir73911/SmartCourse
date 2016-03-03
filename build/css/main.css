@@ -2888,6 +2888,15 @@ select {
     .tags-list.white .tag:hover {
       color: #fff;
       background: rgba(255, 255, 255, 0.1); }
+  .tags-list.small {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+    .tags-list.small .tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      line-height: 1rem; }
+  .tags-list.black-font .tag {
+    color: #000; }
 
 .tag {
   display: inline-block;
