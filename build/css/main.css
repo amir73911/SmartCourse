@@ -29,6 +29,12 @@
   font-weight: bold;
   src: url("../fonts/Jannon10Pro-BoldItalic.otf") format("opentype"); }
 
+@font-face {
+  font-family: "Jannon";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/Jannon10Pro-Italic.otf") format("opentype"); }
+
 /**
  * Foundation for Sites by ZURB
  * Version 6.1.2
@@ -2911,6 +2917,29 @@ select {
   border: 1px solid #f26b3e;
   border-radius: 0.3125rem;
   margin-bottom: 2rem; }
+
+.invitation {
+  margin-bottom: 2rem;
+  display: inline-block;
+  border: 1px solid #cacaca;
+  border-radius: 0.3125rem;
+  text-align: center;
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem; }
+  .invitation .caption {
+    font-size: 1.25rem;
+    font-family: "Jannon";
+    font-style: italic; }
+  .invitation a {
+    font-size: 1.25rem;
+    font-family: "Jannon"; }
+  .invitation img {
+    position: absolute;
+    margin-left: -45px;
+    bottom: -60px; }
 
 * {
   box-sizing: border-box; }

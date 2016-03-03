@@ -80,6 +80,12 @@
   font-weight: bold;
   src: url('../fonts/Jannon10Pro-BoldItalic.otf') format('opentype');
 }
+@font-face {
+  font-family: "Jannon";
+  font-style: italic;
+  font-weight: normal;
+  src: url('../fonts/Jannon10Pro-Italic.otf') format('opentype');
+}
 
 $base-sans-font: 'Proxima Nova', Helvetica, Roboto, Arial, sans-serif;
 $base-serif-font: 'Jannon';
