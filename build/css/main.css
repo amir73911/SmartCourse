@@ -2934,10 +2934,8 @@ h1 span, .price-list .price span, h2 span, .review-slider-name span, .event-titl
   padding: 0.5rem 0; }
 
 h1 a, .price-list .price a, h2 a, .review-slider-name a, .event-title a, h3 a, h4 a, h5 a {
-  text-decoration: underline;
-  color: #f26b3e; }
+  text-decoration: underline; }
   h1 a:hover, .price-list .price a:hover, h2 a:hover, .review-slider-name a:hover, .event-title a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
-    color: #f26b3e;
     text-decoration: none; }
 
 h1.smalled-h1, .price-list .smalled-h1.price {
@@ -3450,3 +3448,8 @@ footer {
   color: #fff;
   background: url("../images/backs/dark-back.jpg") center center no-repeat;
   background-size: cover; }
+
+.map-regions .map-regions-heading {
+  padding-left: 4.375rem; }
+  .map-regions .map-regions-heading a {
+    color: #29a3f9; }
