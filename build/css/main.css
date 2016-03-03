@@ -2548,6 +2548,7 @@ select {
     margin-left: -0.25rem; }
 
 .button {
+  font-family: "Proxima Nova", Helvetica, Roboto, Arial, sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, from(#f56e3c), to(#fa5214));
   background: -moz-linear-gradient(top, #f56e3c, #fa5214);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f56e3c', endColorstr='#fa5214');
@@ -3421,3 +3422,18 @@ footer {
     background-size: cover;
     color: #fff;
     margin-bottom: 0; }
+
+.events-block-main {
+  margin-bottom: 3rem; }
+  .events-block-main p {
+    font-size: 1.25rem;
+    font-family: "Jannon"; }
+  .events-block-main .date-address {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.25rem; }
+    .events-block-main .date-address .button {
+      margin: 0; }
+
+.events-block-small {
+  margin-bottom: 3rem; }
