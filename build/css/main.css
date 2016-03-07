@@ -3027,6 +3027,42 @@ select {
     font-size: 1.25rem;
     margin-bottom: 6rem; }
 
+.bubble-reviews-item {
+  margin-bottom: 2.5rem; }
+  .bubble-reviews-item:nth-child(2n) .bubble-reviews-item-smile {
+    color: #f26b3e; }
+  .bubble-reviews-item:nth-child(2n) .bubble-reviews-item-text {
+    background-color: #cad0dc;
+    background-position: center left;
+    padding-left: 9rem;
+    padding-right: 2rem; }
+  .bubble-reviews-item .bubble-reviews-item-text {
+    border-radius: 0.3125rem;
+    background-repeat: no-repeat;
+    background-color: #cdc5c2;
+    background-size: contain;
+    background-position: center right;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 9rem; }
+  .bubble-reviews-item .bubble-reviews-item-smile {
+    font-size: 5.625rem;
+    line-height: 11rem;
+    font-family: "Jannon";
+    text-align: center; }
+  .bubble-reviews-item .review-text:before, .bubble-reviews-item .review-text:after {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    display: inline-block; }
+  .bubble-reviews-item .review-text:before {
+    left: -15px;
+    top: -10px; }
+  .bubble-reviews-item .review-text:after {
+    padding-left: 0.25rem;
+    right: auto;
+    bottom: -7px; }
+
 * {
   box-sizing: border-box; }
 

@@ -1,0 +1,51 @@
+$bubble-review-color1: #cdc5c2
+$bubble-review-color2: #cad0dc
+
+.bubble-reviews-item
+  margin-bottom: $vertical-gutter * 2.5
+
+  &:nth-child(2n)
+    .bubble-reviews-item-smile
+      color: $color-orange2
+
+    .bubble-reviews-item-text
+      background-color: $bubble-review-color2
+      background-position: center left
+      padding:
+        left: $vertical-gutter * 9
+        right: $vertical-gutter * 2
+
+  .bubble-reviews-item-text
+    border-radius: $global-radius
+    background-repeat: no-repeat
+    background-color: $bubble-review-color1
+    background-size: contain
+    background-position: center right
+
+    padding:
+      top: $vertical-gutter
+      bottom: $vertical-gutter
+      left: $vertical-gutter * 2
+      right: $vertical-gutter * 9
+
+  .bubble-reviews-item-smile
+    font-size: rem-calc(90)
+    line-height: 11rem
+    font-family: $base-serif-font
+    text-align: center
+
+  .review-text
+    &:before,
+    &:after
+      font-size: $base-xlarge-font-size
+      line-height: $base-xlarge-font-size * 2
+      display: inline-block
+
+    &:before
+      left: -15px
+      top: -10px
+
+    &:after
+      padding-left: $vertical-gutter / 4
+      right: auto
+      bottom: -7px
