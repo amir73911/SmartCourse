@@ -1204,6 +1204,7 @@ h1,
 .price-list .price,
 h2,
 .review-slider-name,
+.peoples-slider .peoples-slider-title,
 .event-title,
 h3,
 h4,
@@ -1241,6 +1242,7 @@ small {
 h1, .price-list .price,
 h2,
 .review-slider-name,
+.peoples-slider .peoples-slider-title,
 .event-title,
 h3,
 h4,
@@ -1255,7 +1257,7 @@ h6 {
   margin-bottom: 0.4em;
   line-height: 1; }
   h1 small, .price-list .price small,
-  h2 small, .review-slider-name small, .event-title small,
+  h2 small, .review-slider-name small, .peoples-slider .peoples-slider-title small, .event-title small,
   h3 small,
   h4 small,
   h5 small,
@@ -1266,7 +1268,7 @@ h6 {
 h1, .price-list .price {
   font-size: 1.5rem; }
 
-h2, .review-slider-name, .event-title {
+h2, .review-slider-name, .peoples-slider .peoples-slider-title, .event-title {
   font-size: 1.25rem; }
 
 h3 {
@@ -1284,7 +1286,7 @@ h6 {
 @media screen and (min-width: 40em) {
   h1, .price-list .price {
     font-size: 3.75rem; }
-  h2, .review-slider-name, .event-title {
+  h2, .review-slider-name, .peoples-slider .peoples-slider-title, .event-title {
     font-size: 2.25rem; }
   h3 {
     font-size: 1.875rem; }
@@ -1482,11 +1484,12 @@ kbd {
   p,
   h2,
   .review-slider-name,
+  .peoples-slider .peoples-slider-title,
   .event-title,
   h3 {
     orphans: 3;
     widows: 3; }
-  h2, .review-slider-name, .event-title,
+  h2, .review-slider-name, .peoples-slider .peoples-slider-title, .event-title,
   h3 {
     page-break-after: avoid; } }
 
@@ -2950,30 +2953,70 @@ select {
     margin-left: -45px;
     bottom: -60px; }
 
+.peoples-slider {
+  margin-bottom: 0;
+  position: relative; }
+  .peoples-slider .item-people table td:first-child {
+    width: 35%; }
+  .peoples-slider .item-brands {
+    font-size: 0; }
+    .peoples-slider .item-brands .columns {
+      float: none;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 1.5rem; }
+      .peoples-slider .item-brands .columns:last-child {
+        font-size: 0.9375rem;
+        vertical-align: top;
+        padding: 1rem; }
+  .peoples-slider .caption {
+    font-family: "Jannon";
+    font-size: 1.25rem; }
+  .peoples-slider .owl-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    .peoples-slider .owl-dots .owl-dot {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 0.375rem;
+      color: #29a3f9;
+      font-size: 0.75rem; }
+      .peoples-slider .owl-dots .owl-dot.active {
+        color: #000; }
+        .peoples-slider .owl-dots .owl-dot.active span {
+          background: #000; }
+      .peoples-slider .owl-dots .owl-dot span {
+        width: 0.375rem;
+        height: 0.375rem;
+        display: block;
+        background: #29a3f9;
+        border-radius: 50%; }
+
 * {
   box-sizing: border-box; }
 
 main {
   padding-bottom: 4rem; }
 
-h1.small-margin, .price-list .small-margin.price, h2.small-margin, .small-margin.review-slider-name, .small-margin.event-title, h3.small-margin, h4.small-margin, h5.small-margin {
+h1.small-margin, .price-list .small-margin.price, h2.small-margin, .small-margin.review-slider-name, .peoples-slider .small-margin.peoples-slider-title, .small-margin.event-title, h3.small-margin, h4.small-margin, h5.small-margin {
   margin-bottom: .1em; }
 
-h1.big-margin, .price-list .big-margin.price, h2.big-margin, .big-margin.review-slider-name, .big-margin.event-title, h3.big-margin, h4.big-margin, h5.big-margin {
+h1.big-margin, .price-list .big-margin.price, h2.big-margin, .big-margin.review-slider-name, .peoples-slider .big-margin.peoples-slider-title, .big-margin.event-title, h3.big-margin, h4.big-margin, h5.big-margin {
   margin-bottom: 1em; }
 
-h1.primed, .price-list .primed.price, h2.primed, .primed.review-slider-name, .primed.event-title, h3.primed, h4.primed, h5.primed {
+h1.primed, .price-list .primed.price, h2.primed, .primed.review-slider-name, .peoples-slider .primed.peoples-slider-title, .primed.event-title, h3.primed, h4.primed, h5.primed {
   color: #f26b3e; }
 
-h1 span, .price-list .price span, h2 span, .review-slider-name span, .event-title span, h3 span, h4 span, h5 span {
+h1 span, .price-list .price span, h2 span, .review-slider-name span, .peoples-slider .peoples-slider-title span, .event-title span, h3 span, h4 span, h5 span {
   font-family: "Proxima Nova", Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.9375rem;
   display: block;
   padding: 0.5rem 0; }
 
-h1 a, .price-list .price a, h2 a, .review-slider-name a, .event-title a, h3 a, h4 a, h5 a {
+h1 a, .price-list .price a, h2 a, .review-slider-name a, .peoples-slider .peoples-slider-title a, .event-title a, h3 a, h4 a, h5 a {
   text-decoration: underline; }
-  h1 a:hover, .price-list .price a:hover, h2 a:hover, .review-slider-name a:hover, .event-title a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
+  h1 a:hover, .price-list .price a:hover, h2 a:hover, .review-slider-name a:hover, .peoples-slider .peoples-slider-title a:hover, .event-title a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
     text-decoration: none; }
 
 h1.smalled-h1, .price-list .smalled-h1.price {
@@ -3308,7 +3351,7 @@ footer {
   padding-left: 1rem; }
   .contact-form.small-margin {
     margin-bottom: 1rem; }
-  .contact-form h2, .contact-form .review-slider-name, .contact-form .event-title {
+  .contact-form h2, .contact-form .review-slider-name, .contact-form .peoples-slider .peoples-slider-title, .peoples-slider .contact-form .peoples-slider-title, .contact-form .event-title {
     font-size: 3rem;
     margin-bottom: 0.5rem; }
   .contact-form form {

@@ -1,0 +1,51 @@
+.peoples-slider
+  margin-bottom: 0
+  position: relative
+
+  .item-people
+    table
+      td:first-child
+        width: 35%
+
+  .item-brands
+    font-size: 0
+
+    .columns
+      float: none
+      display: inline-block
+      vertical-align: middle
+      padding: 0 ($vertical-gutter * 1.5)
+      &:last-child
+        font-size: rem-calc(15)
+        vertical-align: top
+        padding: $vertical-gutter
+
+  .caption
+    font-family: $base-serif-font
+    font-size: $base-xlarge-font-size
+
+  .peoples-slider-title
+    @extend h2
+
+  .owl-dots
+    position: absolute
+    bottom: 0
+    right: 0
+
+    .owl-dot
+      display: inline-block
+      vertical-align: middle
+      padding: 0 rem-calc(6)
+      color: $primary-color
+      font-size: $base-small-font-size
+      &.active
+        color: $black
+        span
+          background: $black
+
+      span
+        width: rem-calc(6)
+        height: rem-calc(6)
+        display: block
+        background: $primary-color
+        border-radius: 50%
