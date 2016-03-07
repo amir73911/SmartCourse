@@ -31,8 +31,16 @@ $(document).ready(function () {
                 $dots.eq(eq).html($slide.data('slideName'));
             }
         });
-
-
     }
 
+
+    // Creators Slider
+    $('.creators-slider').owlCarousel({
+        items: 1,
+        nav: false,
+        autoHeight: true
+    });
+    $('.creators-slider .next-link').click(function() {
+        $('.creators-slider').trigger('next.owl.carousel');
+    })
 });

@@ -2993,6 +2993,40 @@ select {
         background: #29a3f9;
         border-radius: 50%; }
 
+.creators-slider .creators-slider-item {
+  background-position: center top;
+  background-size: cover; }
+
+.creators-slider .next-link {
+  float: right;
+  cursor: pointer; }
+
+.creators-slider .next-link-name {
+  font-family: "Jannon";
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  border-bottom: 1px dashed #fff;
+  margin-bottom: 0.25rem; }
+
+.creators-slider .next-link-caption {
+  font-size: 0.75rem; }
+
+.creators-slider-item-content {
+  padding: 6rem 0;
+  color: #fff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); }
+  .creators-slider-item-content h1, .creators-slider-item-content .price-list .price, .price-list .creators-slider-item-content .price {
+    margin-bottom: 0; }
+  .creators-slider-item-content .caption {
+    font-family: "Jannon";
+    font-style: italic;
+    font-size: 1.25rem;
+    margin-bottom: 2rem; }
+  .creators-slider-item-content .review-text {
+    font-family: "Jannon";
+    font-size: 1.25rem;
+    margin-bottom: 6rem; }
+
 * {
   box-sizing: border-box; }
 
@@ -3440,7 +3474,8 @@ footer {
     font-family: "Jannon";
     font-size: 2.25rem;
     font-weight: bold;
-    position: absolute; }
+    position: absolute;
+    color: inherit; }
   .review-text:before {
     top: -20px;
     left: -30px; }
