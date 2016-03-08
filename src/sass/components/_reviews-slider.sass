@@ -5,11 +5,13 @@ $review-slider-main-item-padding-horizontal: $vertical-gutter * 4
   background: $black
 
 .reviews-slider-main-item
-  padding:
-    top: $review-slider-main-item-padding-vertical
-    bottom: $review-slider-main-item-padding-vertical
-    left: $review-slider-main-item-padding-horizontal
-    right: $review-slider-main-item-padding-horizontal
+  padding: $vertical-gutter
+  +breakpoint(medium)
+    padding:
+      top: $review-slider-main-item-padding-vertical
+      bottom: $review-slider-main-item-padding-vertical
+      left: $review-slider-main-item-padding-horizontal
+      right: $review-slider-main-item-padding-horizontal
   background: no-repeat center top
   background-size: cover
 
@@ -33,8 +35,8 @@ $review-slider-main-item-padding-horizontal: $vertical-gutter * 4
   text-align: center
 
   .owl-thumb-item
-    max-height: 100%
-    width: 10%
+    height: calc( 100% - 6px )
+    width: 25%
     display: inline-block
     vertical-align: middle
     overflow: hidden
@@ -42,6 +44,8 @@ $review-slider-main-item-padding-horizontal: $vertical-gutter * 4
     margin: rem-calc(3) rem-calc(2)
     outline: none
     border: 2px solid transparent
+    +breakpoint(medium)
+      width: 10%
 
     &.active
       border-color: $medium-gray2

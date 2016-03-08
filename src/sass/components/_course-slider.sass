@@ -17,7 +17,8 @@ $course-slider-progress-height: rem-calc(6)
   background: $color-orange2
   .facts
     span
-      font-size: $course-slider-slide-title-font-size
+      +breakpoint(medium)
+        font-size: $course-slider-slide-title-font-size
 
 .course-slider-item
   padding:
@@ -27,13 +28,12 @@ $course-slider-progress-height: rem-calc(6)
     right: $course-slider-padding-horizontal
 
 .course-slider-item-title
-  font-family: $course-slider-base-font-family
-  font-size: $course-slider-slide-title-font-size
-  font-weight: bold
+  @extend h1
 
 .course-slider-item-caption
   font-family: $course-slider-base-font-family
-  font-size: $course-slider-slide-caption-font-size
+  +breakpoint(medium)
+    font-size: $course-slider-slide-caption-font-size
 
 .course-slider-counters
   background: $course-slider-counters-background

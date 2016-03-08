@@ -2,7 +2,9 @@ $bubble-review-color1: #cdc5c2
 $bubble-review-color2: #cad0dc
 
 .bubble-reviews-item
-  margin-bottom: $vertical-gutter * 2.5
+  margin-bottom: $vertical-gutter
+  +breakpoint(medium)
+    margin-bottom: $vertical-gutter * 2.5
 
   &:nth-child(2n)
     .bubble-reviews-item-smile
@@ -11,9 +13,11 @@ $bubble-review-color2: #cad0dc
     .bubble-reviews-item-text
       background-color: $bubble-review-color2
       background-position: center left
-      padding:
-        left: $vertical-gutter * 9
-        right: $vertical-gutter * 2
+
+      +breakpoint(medium)
+        padding:
+          left: $vertical-gutter * 9
+          right: $vertical-gutter * 2
 
   .bubble-reviews-item-text
     border-radius: $global-radius
@@ -21,12 +25,17 @@ $bubble-review-color2: #cad0dc
     background-color: $bubble-review-color1
     background-size: contain
     background-position: center right
+    padding: $vertical-gutter
 
-    padding:
-      top: $vertical-gutter
-      bottom: $vertical-gutter
-      left: $vertical-gutter * 2
-      right: $vertical-gutter * 9
+    +breakpoint(small only)
+      background-image: none !important
+
+    +breakpoint(medium)
+      padding:
+        top: $vertical-gutter
+        bottom: $vertical-gutter
+        left: $vertical-gutter * 2
+        right: $vertical-gutter * 9
 
   .bubble-reviews-item-smile
     font-size: rem-calc(90)

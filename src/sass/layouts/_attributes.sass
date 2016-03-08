@@ -1,14 +1,23 @@
 .attributes
   +clearfix
   margin: $vertical-gutter 0
-  padding: ($vertical-gutter * 2.5) ($vertical-gutter * 4)
+  padding: $vertical-gutter
   border-radius: $global-radius
   border: 2px solid $color-orange2
+  +breakpoint(medium)
+    padding: ($vertical-gutter * 2.5) ($vertical-gutter * 4)
 
   .attributes-item
     float: left
     line-height: rem-calc(30)
-    padding-right: $vertical-gutter * 3
+    padding:
+      bottom: $vertical-gutter / 2
+      right: $vertical-gutter
+    +breakpoint(medium)
+      padding:
+        bottom: 0
+        right: $vertical-gutter * 3
+
     &:last-child
       padding-right: 0
 

@@ -1,5 +1,5 @@
 .invitation
-  margin-bottom: $vertical-gutter * 2
+  margin-bottom: $vertical-gutter * 4
   display: inline-block
   border: 1px solid $medium-gray
   border-radius: $global-radius
@@ -10,6 +10,9 @@
     bottom: $vertical-gutter * 2
     left: $vertical-gutter * 4
     right: $vertical-gutter * 4
+
+  +breakpoint(medium)
+    margin-bottom: $vertical-gutter * 2
 
   .caption
     font-size: $base-xlarge-font-size
@@ -23,4 +26,6 @@
   img
     position: absolute
     margin-left: -45px
-    bottom: -60px
+
+    +breakpoint(medium)
+      bottom: -60px

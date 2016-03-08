@@ -16,6 +16,9 @@ main
 h1, h2, h3, h4, h5
   //word-break: break-all
   //letter-spacing: 1px
+  max-width: 100%
+  overflow: hidden
+  text-overflow: ellipsis
   &.small-margin
     margin-bottom: .1em
   &.big-margin
@@ -34,9 +37,10 @@ h1, h2, h3, h4, h5
       //color: $color-orange2
       text-decoration: none
 
-h1
-  &.smalled-h1
-    font-size: rem-calc(48)
++breakpoint(medium)
+  h1
+    &.smalled-h1
+      font-size: rem-calc(48)
 
 .global-margin
   margin-bottom: $vertical-gutter
@@ -51,6 +55,8 @@ a
   &.link-inner // Внутренние ссылки
     text-decoration: none
     border-bottom: 1px dashed $primary-color
+    white-space: nowrap
+
     &:hover
       border-bottom: none
   &.link-reverse
@@ -82,16 +88,18 @@ section,
     .plus-img
       margin-top: 45%
     .letter-img
-      margin-top: -23%
+      margin-top: rem-calc(-100)
 
 section
-  margin-bottom: $vertical-gutter * 4
+  margin-bottom: $vertical-gutter * 2
+  +breakpoint(medium)
+    margin-bottom: $vertical-gutter * 4
   &.no-margin
     margin-bottom: 0
   &.section-back-1
     background: url("../images/backs/1.jpg") center top no-repeat
   &.wide
-    max-width: rem-calc(1200)
+    max-width: rem-calc(1600)
     padding:
       left: 0
       right: 0
@@ -100,9 +108,10 @@ section
   h1
     margin-bottom: $vertical-gutter / 2
   .columns
-    padding:
-      top: ($vertical-gutter * 2)
-      bottom: $vertical-gutter
+    +breakpoint(medium)
+      padding:
+        top: ($vertical-gutter * 2)
+        bottom: $vertical-gutter
     .icon
       margin-bottom: $vertical-gutter
 
@@ -182,10 +191,23 @@ section
 // Template with sidebar
 // ----------
 .side-bar
-  +grid-column(3)
+  +grid-column(12)
+
+  +breakpoint(medium)
+    +grid-column(4)
+
+  +breakpoint(large)
+    +grid-column(3)
+
 
   .side-bar-block
     margin-bottom: $vertical-gutter * 2
 
 .content-bar
-  +grid-column(9)
+  +grid-column(12)
+
+  +breakpoint(medium)
+    +grid-column(8)
+
+  +breakpoint(large)
+    +grid-column(9)

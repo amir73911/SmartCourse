@@ -1,5 +1,14 @@
 .map-regions
+
+  .columns
+    padding:
+      top: $vertical-gutter
+      bottom: $vertical-gutter
+
   .map-regions-heading
-    padding-left: rem-calc(70)
+
+    +breakpoint(medium)
+      padding-left: rem-calc(70)
+
     a
       color: $primary-color

@@ -105,7 +105,7 @@ $global-radius: rem-calc(5);
 $global-text-direction: ltr;
 
 $global-font-size: 100%;
-$global-width: rem-calc(980) + ($global-margin * 2);
+$global-width: rem-calc(1600) + ($global-margin * 2);
 $global-lineheight: 1.5;
 $primary-color: #29a3f9;
 $primary-color2: #0074c5;
@@ -145,7 +145,7 @@ $breakpoints: (
         xlarge: 1200px,
         xxlarge: 1440px,
 );
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small  medium large);
 
 // 3. The Grid
 // -----------
@@ -168,14 +168,22 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
         small: (
-                'h1': 24,
-                'h2': 20,
-                'h3': 19,
-                'h4': 18,
-                'h5': 17,
+                'h1': 32,
+                'h2': 30,
+                'h3': 26,
+                'h4': 20,
+                'h5': 20,
                 'h6': 16,
         ),
         medium: (
+                'h1': 48,
+                'h2': 32,
+                'h3': 30,
+                'h4': 26,
+                'h5': 20,
+                'h6': 16,
+        ),
+        large: (
                 'h1': 60,
                 'h2': 36,
                 'h3': 30,
@@ -185,7 +193,7 @@ $header-sizes: (
         ),
 );
 $header-color: inherit;
-$header-lineheight: 1;
+$header-lineheight: 1.2;
 $header-margin-bottom: 0.4em;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;

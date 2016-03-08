@@ -4,8 +4,20 @@
 
   .item-people
     table
-      td:first-child
-        width: 35%
+      td
+        display: block
+        width: 100%
+        padding:
+          top: $vertical-gutter
+          bottom: $vertical-gutter
+      +breakpoint(medium)
+        td
+          display: table-cell
+          padding:
+            top: 0
+            bottom: 0
+        td:first-child
+          width: 35%
 
   .item-brands
     font-size: 0
@@ -14,7 +26,7 @@
       float: none
       display: inline-block
       vertical-align: middle
-      padding: 0 ($vertical-gutter * 1.5)
+      padding: $vertical-gutter ($vertical-gutter * 1.5)
       &:last-child
         font-size: rem-calc(15)
         vertical-align: top

@@ -3,23 +3,35 @@ $button-orange-gradient-color1: #f56e3c
 $button-orange-gradient-color2: #fa5214
 $button-blue-gradient-color1: #66c0f9
 $button-blue-gradient-color2: #2a97db
+$button-font-size: $base-small-font-size
+$button-medium-font-size: $base-font-size
 $button-big-font-size: $base-xlarge-font-size
 $button-gradient-size: 10px
 $button-gradient-opacity: 0.7
 
 .button
+  max-width: 100%
+  overflow: hidden
+  text-overflow: ellipsis
   font-family: $base-sans-font
   +gradient($button-orange-gradient-color1, $button-orange-gradient-color2)
   text-transform: uppercase
-  font-size: $button-big-font-size
+  font-size: $button-font-size
   letter-spacing: 1.5px
   transition: box-shadow $base-transition ease
   +box-shadow(0, 3px, $button-gradient-size, rgba($button-orange-gradient-color2, $button-gradient-opacity))
 
+  +breakpoint(medium)
+    font-size: $button-medium-font-size
+
+  +breakpoint(large)
+    font-size: $button-big-font-size
+
   &.small-btn
-    font-size: rem-calc(15)
     padding: ($vertical-gutter / 2) $vertical-gutter
     border-radius: rem-calc(6)
+    +breakpoint(medium)
+      font-size: rem-calc(15)
 
   &.lower-btn
     text-transform: lowercase

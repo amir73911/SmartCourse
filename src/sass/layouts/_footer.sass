@@ -31,9 +31,11 @@ footer
   .phone
     display: block
     font-weight: bold
-    font-size: $footer-contacts-phone-font-size
+    font-size: $base-font-size
     line-height: $footer-contacts-phone-font-size
     margin-bottom: $footer-contacts-phone-margin-bottom
+    +breakpoint(large)
+      font-size: $footer-contacts-phone-font-size
 
   .email
     margin-bottom: $footer-contacts-email-margin-bottom
@@ -42,12 +44,20 @@ footer
     font-size: 0
 
     .icon
-      margin-right: $footer-contacts-social-margin-right
+      transform: scale(1)
+      margin:
+        bottom: $footer-contacts-social-margin-right
+        right: $footer-contacts-social-margin-right
+      +breakpoint(medium only)
+        transform: scale(0.7)
+        margin: 0
 
 .footer-map
   .mini-map
     float: left
-    margin-right: $footer-contacts-minimap-margin-right
+    margin:
+      bottom: $vertical-gutter * 2
+      right: $footer-contacts-minimap-margin-right
 
   .map-name
     font-weight: bold

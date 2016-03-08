@@ -1,6 +1,16 @@
+.events-list
+  +breakpoint(small only)
+    .columns
+      padding:
+        top: $vertical-gutter
+        bottom: $vertical-gutter
+
+
 .event-inner,
 .event-image
   margin-bottom: $vertical-gutter
+  +breakpoint(small only)
+    height: auto !important
 
 .event-pre-title
   font-size: rem-calc(13)

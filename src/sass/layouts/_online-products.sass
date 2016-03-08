@@ -1,7 +1,22 @@
 .online-products
   padding:
-    top: $vertical-gutter * 4
-    bottom: $vertical-gutter * 4
+    top: $vertical-gutter
+    bottom: $vertical-gutter
   color: $white
   background: url("../images/backs/dark-back.jpg") center center no-repeat
   background-size: cover
+
+  .columns
+    padding:
+      top: $vertical-gutter
+      bottom: $vertical-gutter
+
+  +breakpoint(medium)
+    padding:
+      top: $vertical-gutter * 4
+      bottom: $vertical-gutter * 4
+
+    .columns
+      padding:
+        top: 0
+        bottom: 0

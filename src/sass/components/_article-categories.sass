@@ -21,11 +21,16 @@ $article-categories-link-active-color: $primary-color2
   a
     position: relative
     text-decoration: underline
+    font-size: rem-calc(15)
     &:hover
       text-decoration: none
 
   .article-categories-title
     padding-bottom: $vertical-gutter / 2
     font-family: $article-categories-title-font-family
-    font-size: $article-categories-title-font-size
     font-weight: bold
+    max-width: 100%
+    overflow: hidden
+    text-overflow: ellipsis
+    +breakpoint(large)
+      font-size: $article-categories-title-font-size

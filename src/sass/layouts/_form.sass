@@ -2,25 +2,39 @@
   text-align: center
   border: 2px solid $color-orange2
   border-radius: $global-radius
-  padding:
-    top: $vertical-gutter * 3
-    right: $vertical-gutter
-    bottom: $vertical-gutter * 2
-    left: $vertical-gutter
+  padding: $vertical-gutter
+  max-width: rem-calc(1200)
+  margin:
+    left: auto
+    right: auto
+
+  +breakpoint(medium)
+    padding:
+      top: $vertical-gutter * 3
+      right: $vertical-gutter
+      bottom: $vertical-gutter * 2
+      left: $vertical-gutter
+
   &.small-margin
     margin-bottom: $vertical-gutter
 
   h2
-    font-size: rem-calc(48)
     margin-bottom: $vertical-gutter / 2
+    +breakpoint(medium)
+      font-size: rem-calc(48)
 
   form
-    padding:
-      right: $vertical-gutter * 4
-      top: $vertical-gutter * 2
-      bottom: $vertical-gutter * 2
-      left: $vertical-gutter * 4
     text-align: left
+
+    +breakpoint(medium)
+      padding: $vertical-gutter * 2
+
+    +breakpoint(large)
+      padding:
+        right: $vertical-gutter * 4
+        top: $vertical-gutter * 2
+        bottom: $vertical-gutter * 2
+        left: $vertical-gutter * 4
 
   .button
     margin: $vertical-gutter 0
@@ -47,6 +61,8 @@
       border: 1px solid $color-brown
       text-align: center
       transition: background $base-transition ease
+      overflow: hidden
+      text-overflow: ellipsis
       &:hover
         background: rgba($color-orange, .6)
       &.active
@@ -70,3 +86,16 @@
     .ticket-caption-title
       text-transform: uppercase
       font-size: rem-calc(13)
+
+
+
+  +breakpoint(small only)
+    [type='file'],
+    [type='checkbox'],
+    [type='radio']
+      margin-bottom: 0
+      vertical-align: middle
+
+    label
+      font-size: $base-small-font-size
+
