@@ -3,6 +3,7 @@
 //= ../../bower_components/foundation-sites/dist/foundation.min.js
 //= ../../bower_components/owl.carousel/dist/owl.carousel.min.js
 //= ../../bower_components/owl.carousel2.thumbs/dist/owl.carousel2.thumbs.min.js
+//= ../../bower_components/Likely/release/likely.js
 //= vendor/jquery-ui.min.js
 
 $(document).ready(function() {

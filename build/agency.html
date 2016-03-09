@@ -12,6 +12,14 @@
 
 <section class="wide big-banner big-banner-map">
 
+    <div class="background-video">
+        <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+            <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+            <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm">
+            <source src="//demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <header class="header-revert">
         <div class="container">
             <a class="logo" href="index.html"><img src="images/logo-revert.png" alt="Smart Course"></a>
@@ -35,8 +43,8 @@
 
     <div class="container">
         <h1>Региональное представительство Cмарт Курс</h1>
-        <div class="features row medium-up-2 large-up-3">
-            <div class="columns end">
+        <div class="features row">
+            <div class="columns medium-6 large-4">
                 <div class="row medium-up-2">
                     <div class="features-item columns">
                         <span>60 000 Р</span> затраты на открытие
@@ -57,6 +65,9 @@
                         <span>3 региона</span> уже открыли свои представительства
                     </div>
                 </div>
+            </div>
+            <div class="columns medium-6 large-7 large-offset-1">
+                <img src="images/content/map-white.png" alt="map">
             </div>
         </div>
     </div>
@@ -226,8 +237,8 @@
                     </div>
                 </div>
                 <div class="reviews-paging clearfix">
-                    <a href="#" class="float-left link-reverse">← Августин Блаженный</a>
-                    <a href="#" class="float-right link-reverse">Владимир Петров →</a>
+                    <a href="#" class="float-left link-inner"><span class="arrow-char">←</span> Августин Блаженный</a>
+                    <a href="#" class="float-right link-inner">Владимир Петров <span class="arrow-char">→</span></a>
                 </div>
             </div>
 
@@ -243,13 +254,13 @@
                 <span>Марина Ковалевская на Первом</span>
                 <div class="small-caption">1 апреля 2015</div>
                 <div class="clearfix">
-                    <a href="#" class="float-right link-reverse">Следующий →</a>
+                    <a href="#" class="float-right link-inner">Следующий <span class="arrow-char">→</span></a>
                 </div>
             </div>
 
             <div class="content-block">
                 <h2>Награды</h2>
-                <div class="row small-up-2">
+                <div class="row small-up-2 image-gallery">
                     <div class="columns global-margin">
                         <a href="#"><img src="images/pics/sert.png" alt="sert"></a>
                         <div>the Time</div>
@@ -272,7 +283,7 @@
                     </div>
                 </div>
                 <div class="clearfix">
-                    <a href="#" class="float-right link-reverse">Следующие →</a>
+                    <a href="#" class="float-right link-inner">Следующие <span class="arrow-char">→</span></a>
                 </div>
             </div>
 
@@ -280,7 +291,7 @@
         <div class="columns small-5 small-offset-2 medium-3 medium-offset-1">
             <div class="content-block">
                 <h2>Публикации</h2>
-                <div class="row small-up-2">
+                <div class="row small-up-2 image-gallery">
                     <div class="columns global-margin">
                         <a href="#"><img src="images/pics/mag1.png" alt="mag"></a>
                         <div>the Time</div>
@@ -323,7 +334,7 @@
                     </div>
                 </div>
                 <div class="clearfix">
-                    <a href="#" class="float-right link-reverse">Следующие →</a>
+                    <a href="#" class="float-right link-inner">Следующие <span class="arrow-char">→</span></a>
                 </div>
             </div>
         </div>
@@ -383,7 +394,7 @@
                 </div>
             </div>
             <div class="footer-map columns medium-6">
-                <a href="#" class="mini-map"><img src="images/mini-map.png" alt="map"></a>
+                <a href="https://goo.gl/maps/zok9Ky7ERhR2" target="_blank" class="mini-map"><img src="images/mini-map.png" alt="map"></a>
                 <div class="map-name">
                     <i class="icon icon-metro"></i> Павелецкая
                 </div>

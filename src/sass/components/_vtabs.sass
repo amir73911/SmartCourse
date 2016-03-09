@@ -6,6 +6,7 @@
       a
         color: $color-orange2
         text-decoration: none
+        border-bottom: none
 
   .vtab
     display: none
@@ -17,3 +18,10 @@
     font-size: rem-calc(36)
     line-height: 1
     display: block
+
+// Foundation tabs own styles
+.tabs-content
+  .tabs-panel
+    display: none
+    &.is-active
+      display: block

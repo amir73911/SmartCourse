@@ -17,8 +17,10 @@
       bottom: $vertical-gutter / 2
     .tag
       font-size: $base-small-font-size
+      line-height: $base-small-font-size
       text-transform: uppercase
-      line-height: $base-font-size
+      padding-top: 0.16rem
+      letter-spacing: 1px
 
   &.black-font
     .tag
@@ -36,6 +38,8 @@
   border: 1px solid $color-brown
   border-radius: $global-radius
   transition: background $base-transition ease
+  &:first-child
+    margin-left: 0
   &:hover
     color: $color-brown
     background: rgba($color-brown, .1)

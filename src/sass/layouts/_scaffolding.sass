@@ -32,10 +32,6 @@ h1, h2, h3, h4, h5
     padding: ($vertical-gutter / 2) 0
   a
     text-decoration: underline
-    //color: $color-orange2
-    &:hover
-      //color: $color-orange2
-      text-decoration: none
 
 +breakpoint(medium)
   h1
@@ -56,9 +52,10 @@ a
     text-decoration: none
     border-bottom: 1px dashed $primary-color
     white-space: nowrap
-
     &:hover
       border-bottom: none
+      margin-bottom: 1px
+
   &.link-reverse
     text-decoration: underline
     &:hover
@@ -71,6 +68,7 @@ main,
 section,
 .container
   +grid-col-row()
+  position: relative
   float: none !important
   +clearfix
 
@@ -99,7 +97,7 @@ section
   &.section-back-1
     background: url("../images/backs/1.jpg") center top no-repeat
   &.wide
-    max-width: rem-calc(1600)
+    max-width: 100%
     padding:
       left: 0
       right: 0
@@ -144,10 +142,13 @@ section
     right: $vertical-gutter
     bottom: $vertical-gutter / 2
   a
+    display: inline-block
     font-family: $base-serif-font
     font-size: $base-xlarge-font-size
-    text-decoration: underline
-    display: block
+    line-height: $base-xlarge-font-size
+    margin-bottom: $vertical-gutter / 4
+    text-decoration: none
+    border-bottom: 1px dashed $primary-color
   span
     display: block
     text-transform: uppercase
@@ -187,6 +188,16 @@ section
   border: 2px solid $color-orange2
   border-radius: $global-radius
 
+.arrow-char
+  font-family: Arial, sans-serif
+
+.image-gallery
+  img
+    transition: all $base-transition ease
+    &:hover
+      box-shadow: 0 0 10px rgba($black, .5)
+      transform: scale(1.1)
+
 
 // Template with sidebar
 // ----------
@@ -211,3 +222,6 @@ section
 
   +breakpoint(large)
     +grid-column(9)
+
+.content-bar + .side-bar
+  padding-left: $vertical-gutter * 1.5
