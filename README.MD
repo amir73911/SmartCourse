@@ -1,3 +1,4 @@
+#Smart Course
 #My simple boilerplate Gulp + Rigger + Sass + Foundation + LiveReload
 
 ##Usage:
