@@ -1206,6 +1206,7 @@ h1,
 h2,
 .review-slider-name,
 .peoples-slider .peoples-slider-title,
+.contact-form .form-success-plane p,
 .event-title,
 h3,
 h4,
@@ -1244,6 +1245,7 @@ h1, .course-slider-item-title, .price-list .price,
 h2,
 .review-slider-name,
 .peoples-slider .peoples-slider-title,
+.contact-form .form-success-plane p,
 .event-title,
 h3,
 h4,
@@ -1258,7 +1260,7 @@ h6 {
   margin-bottom: 0.4em;
   line-height: 1.2; }
   h1 small, .course-slider-item-title small, .price-list .price small,
-  h2 small, .review-slider-name small, .peoples-slider .peoples-slider-title small, .event-title small,
+  h2 small, .review-slider-name small, .peoples-slider .peoples-slider-title small, .contact-form .form-success-plane p small, .event-title small,
   h3 small,
   h4 small,
   h5 small,
@@ -1269,7 +1271,7 @@ h6 {
 h1, .course-slider-item-title, .price-list .price {
   font-size: 2rem; }
 
-h2, .review-slider-name, .peoples-slider .peoples-slider-title, .event-title {
+h2, .review-slider-name, .peoples-slider .peoples-slider-title, .contact-form .form-success-plane p, .event-title {
   font-size: 1.875rem; }
 
 h3 {
@@ -1287,7 +1289,7 @@ h6 {
 @media screen and (min-width: 40em) {
   h1, .course-slider-item-title, .price-list .price {
     font-size: 3rem; }
-  h2, .review-slider-name, .peoples-slider .peoples-slider-title, .event-title {
+  h2, .review-slider-name, .peoples-slider .peoples-slider-title, .contact-form .form-success-plane p, .event-title {
     font-size: 2rem; }
   h3 {
     font-size: 1.875rem; }
@@ -1301,7 +1303,7 @@ h6 {
 @media screen and (min-width: 61.25em) {
   h1, .course-slider-item-title, .price-list .price {
     font-size: 3.75rem; }
-  h2, .review-slider-name, .peoples-slider .peoples-slider-title, .event-title {
+  h2, .review-slider-name, .peoples-slider .peoples-slider-title, .contact-form .form-success-plane p, .event-title {
     font-size: 2.25rem; }
   h3 {
     font-size: 1.875rem; }
@@ -1500,11 +1502,12 @@ kbd {
   h2,
   .review-slider-name,
   .peoples-slider .peoples-slider-title,
+  .contact-form .form-success-plane p,
   .event-title,
   h3 {
     orphans: 3;
     widows: 3; }
-  h2, .review-slider-name, .peoples-slider .peoples-slider-title, .event-title,
+  h2, .review-slider-name, .peoples-slider .peoples-slider-title, .contact-form .form-success-plane p, .event-title,
   h3 {
     page-break-after: avoid; } }
 
@@ -3415,22 +3418,22 @@ select {
 main {
   padding-bottom: 4rem; }
 
-h1, .course-slider-item-title, .price-list .price, h2, .review-slider-name, .peoples-slider .peoples-slider-title, .event-title, h3, h4, h5 {
+h1, .course-slider-item-title, .price-list .price, h2, .review-slider-name, .peoples-slider .peoples-slider-title, .contact-form .form-success-plane p, .event-title, h3, h4, h5 {
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis; }
-  h1.small-margin, .small-margin.course-slider-item-title, .price-list .small-margin.price, h2.small-margin, .small-margin.review-slider-name, .peoples-slider .small-margin.peoples-slider-title, .small-margin.event-title, h3.small-margin, h4.small-margin, h5.small-margin {
+  h1.small-margin, .small-margin.course-slider-item-title, .price-list .small-margin.price, h2.small-margin, .small-margin.review-slider-name, .peoples-slider .small-margin.peoples-slider-title, .contact-form .form-success-plane p.small-margin, .small-margin.event-title, h3.small-margin, h4.small-margin, h5.small-margin {
     margin-bottom: .1em; }
-  h1.big-margin, .big-margin.course-slider-item-title, .price-list .big-margin.price, h2.big-margin, .big-margin.review-slider-name, .peoples-slider .big-margin.peoples-slider-title, .big-margin.event-title, h3.big-margin, h4.big-margin, h5.big-margin {
+  h1.big-margin, .big-margin.course-slider-item-title, .price-list .big-margin.price, h2.big-margin, .big-margin.review-slider-name, .peoples-slider .big-margin.peoples-slider-title, .contact-form .form-success-plane p.big-margin, .big-margin.event-title, h3.big-margin, h4.big-margin, h5.big-margin {
     margin-bottom: 1em; }
-  h1.primed, .primed.course-slider-item-title, .price-list .primed.price, h2.primed, .primed.review-slider-name, .peoples-slider .primed.peoples-slider-title, .primed.event-title, h3.primed, h4.primed, h5.primed {
+  h1.primed, .primed.course-slider-item-title, .price-list .primed.price, h2.primed, .primed.review-slider-name, .peoples-slider .primed.peoples-slider-title, .contact-form .form-success-plane p.primed, .primed.event-title, h3.primed, h4.primed, h5.primed {
     color: #f26b3e; }
-  h1 span, .course-slider-item-title span, .price-list .price span, h2 span, .review-slider-name span, .peoples-slider .peoples-slider-title span, .event-title span, h3 span, h4 span, h5 span {
+  h1 span, .course-slider-item-title span, .price-list .price span, h2 span, .review-slider-name span, .peoples-slider .peoples-slider-title span, .contact-form .form-success-plane p span, .event-title span, h3 span, h4 span, h5 span {
     font-family: "Proxima Nova", Helvetica, Roboto, Arial, sans-serif;
     font-size: 0.9375rem;
     display: block;
     padding: 0.5rem 0; }
-  h1 a, .course-slider-item-title a, .price-list .price a, h2 a, .review-slider-name a, .peoples-slider .peoples-slider-title a, .event-title a, h3 a, h4 a, h5 a {
+  h1 a, .course-slider-item-title a, .price-list .price a, h2 a, .review-slider-name a, .peoples-slider .peoples-slider-title a, .contact-form .form-success-plane p a, .event-title a, h3 a, h4 a, h5 a {
     text-decoration: underline; }
 
 @media screen and (min-width: 40em) {
@@ -3638,7 +3641,24 @@ section {
 .subscribe {
   padding: 2rem 1.5rem;
   border: 2px solid #f26b3e;
-  border-radius: 0.3125rem; }
+  border-radius: 0.3125rem;
+  position: relative;
+  overflow: hidden; }
+  .subscribe.success .form-success-plane {
+    left: 0; }
+
+.form-success-plane {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #f26b3e;
+  padding: 2.5rem 1.5rem;
+  color: #fff;
+  transition: left 0.3s ease; }
+  .form-success-plane h2, .form-success-plane .review-slider-name, .form-success-plane .peoples-slider .peoples-slider-title, .peoples-slider .form-success-plane .peoples-slider-title, .contact-form .form-success-plane p, .form-success-plane .event-title {
+    font-size: 1.875rem; }
 
 .arrow-char {
   font-family: Arial, sans-serif; }
@@ -3879,8 +3899,27 @@ footer {
   border-radius: 0.3125rem;
   padding: 1rem;
   max-width: 75rem;
+  overflow: hidden;
+  position: relative;
   margin-left: auto;
   margin-right: auto; }
+  .contact-form .form-success-plane {
+    font-size: 0; }
+    .contact-form .form-success-plane:before {
+      content: "";
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle; }
+    .contact-form .form-success-plane .form-success-plane-inner {
+      display: inline-block;
+      vertical-align: middle; }
+    @media screen and (min-width: 40em) {
+      .contact-form .form-success-plane h2, .contact-form .form-success-plane .review-slider-name, .contact-form .form-success-plane .peoples-slider .peoples-slider-title, .peoples-slider .contact-form .form-success-plane .peoples-slider-title, .contact-form .form-success-plane p, .contact-form .form-success-plane .event-title {
+        font-size: 7.5rem; }
+      .contact-form .form-success-plane p {
+        font-weight: normal; } }
+  .contact-form.success .form-success-plane {
+    left: 0; }
   @media screen and (min-width: 40em) {
     .contact-form {
       padding-top: 3rem;
@@ -3889,10 +3928,10 @@ footer {
       padding-left: 1rem; } }
   .contact-form.small-margin {
     margin-bottom: 1rem; }
-  .contact-form h2, .contact-form .review-slider-name, .contact-form .peoples-slider .peoples-slider-title, .peoples-slider .contact-form .peoples-slider-title, .contact-form .event-title {
+  .contact-form h2, .contact-form .review-slider-name, .contact-form .peoples-slider .peoples-slider-title, .peoples-slider .contact-form .peoples-slider-title, .contact-form .form-success-plane p, .contact-form .event-title {
     margin-bottom: 0.5rem; }
     @media screen and (min-width: 40em) {
-      .contact-form h2, .contact-form .review-slider-name, .contact-form .peoples-slider .peoples-slider-title, .peoples-slider .contact-form .peoples-slider-title, .contact-form .event-title {
+      .contact-form h2, .contact-form .review-slider-name, .contact-form .peoples-slider .peoples-slider-title, .peoples-slider .contact-form .peoples-slider-title, .contact-form .form-success-plane p, .contact-form .event-title {
         font-size: 3rem; } }
   .contact-form form {
     text-align: left; }

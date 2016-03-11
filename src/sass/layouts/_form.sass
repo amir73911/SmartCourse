@@ -4,9 +4,35 @@
   border-radius: $global-radius
   padding: $vertical-gutter
   max-width: rem-calc(1200)
+  overflow: hidden
+  position: relative
   margin:
     left: auto
     right: auto
+
+  .form-success-plane
+    font-size: 0
+    &:before
+      content: ""
+      height: 100%
+      display: inline-block
+      vertical-align: middle
+    .form-success-plane-inner
+      display: inline-block
+      vertical-align: middle
+
+    +breakpoint(medium)
+      h2
+        font-size: rem-calc(120px)
+
+      p
+        @extend h2
+        font-weight: normal
+
+
+  &.success
+    .form-success-plane
+      left: 0
 
   +breakpoint(medium)
     padding:
