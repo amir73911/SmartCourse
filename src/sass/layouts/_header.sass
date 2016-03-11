@@ -51,9 +51,41 @@ header
 
 .main-nav
   margin-bottom: $vertical-gutter
-  ul
+  &>ul
     +menu-simple
     margin: 0
+
+    &>li
+      position: relative
+      margin: 0
+      &.has-child
+        &:hover
+          background: $color-orange
+          border-radius: $global-radius  $global-radius 0 0
+          ul
+            display: block
+      &>a
+        display: inline-block
+        padding:
+          top: $vertical-gutter / 2
+          left: $vertical-gutter / 2
+          right: $vertical-gutter / 2
+          bottom: 0
+      &>ul
+        display: none
+        position: absolute
+        z-index: 2
+        margin: 0
+        background: $color-orange
+        border-radius: 0 $global-radius $global-radius  $global-radius
+        padding:
+          top: $vertical-gutter / 4
+          left: $vertical-gutter / 2
+          right: $vertical-gutter / 2
+          bottom: $vertical-gutter / 2
+        a
+          text-transform: none
+          white-space: nowrap
 
   a
     font-size: $main-nav-link-font-size
