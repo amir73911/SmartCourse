@@ -4110,14 +4110,19 @@ footer {
   margin-bottom: 1rem; }
 
 .date-address {
-  font-size: 0.875rem;
+  font-size: 0;
   font-family: "Jannon"; }
+  .date-address .columns {
+    display: inline-block;
+    vertical-align: middle;
+    float: none !important;
+    font-size: 0.875rem; }
   .date-address span {
     font-size: 1.25rem; }
   .date-address i {
     vertical-align: baseline; }
   .date-address .button {
-    margin-top: 1rem; }
+    margin: 0; }
 
 .black-head-block {
   position: absolute;
@@ -4138,10 +4143,9 @@ footer {
     font-family: "Jannon"; }
   .events-block-main .date-address {
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.25rem; }
-    .events-block-main .date-address .button {
-      margin: 0; }
+    padding-bottom: 1rem; }
+    .events-block-main .date-address .columns {
+      font-size: 1.25rem; }
 
 .events-block-small {
   margin-bottom: 3rem; }
