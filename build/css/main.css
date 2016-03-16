@@ -3753,7 +3753,8 @@ section {
 header {
   padding: 1rem 0;
   margin-bottom: 1rem;
-  position: relative; }
+  position: relative;
+  text-shadow: none; }
   header .container, header .main-message {
     display: flex;
     flex-wrap: wrap;
