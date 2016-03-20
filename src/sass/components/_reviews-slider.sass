@@ -44,15 +44,30 @@ $review-slider-main-item-padding-horizontal: $vertical-gutter * 4
     margin: rem-calc(3) rem-calc(2)
     outline: none
     border: 2px solid transparent
+    position: relative
+    &:before
+      content: ""
+      display: block
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background: rgba($black, .4)
     +breakpoint(medium)
       width: 10%
 
     &.active
       border-color: $medium-gray2
-      img
-        opacity: 1
+
+    span
+      position: absolute
+      left: 2px
+      bottom: 0
+      max-width: 100%
+      font-size: rem-calc(12)
+      color: $white
 
     img
       max-height: 100%
-      opacity: .7
       transition: opacity $base-transition ease

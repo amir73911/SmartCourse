@@ -7,8 +7,25 @@ $(document).ready(function () {
         dots: false,
         thumbs: true,
         thumbsPrerendered: true,
-        thumbImage: true
+        thumbImage: true,
+        onInitialized: setDotsNames
     });
+
+    function setDotsNames(event) {
+        var $container = $(event.target),
+            $items = $container.find('.reviews-slider-main-item'),
+            $dots = $container.parent('.reviews-slider').find('.owl-thumb-item');
+
+        $items.each(function () {
+            var $slide = $(this),
+                eq = $slide.parents('.owl-item').index();
+
+            if ($slide.data('slideName')) {
+                console.log(eq);
+                $dots.eq(eq).append('<span>' + $slide.data('slideName') + '</span>');
+            }
+        });
+    }
 
     // Peoples Slider
     $('.peoples-slider-inner').owlCarousel({
@@ -23,7 +40,7 @@ $(document).ready(function () {
             $items = $container.find('.item'),
             $dots = $container.find('.owl-dot');
 
-        $items.each(function() {
+        $items.each(function () {
             var $slide = $(this),
                 eq = $slide.parents('.owl-item').index();
 
@@ -40,7 +57,7 @@ $(document).ready(function () {
         nav: false,
         autoHeight: true
     });
-    $('.creators-slider .next-link').click(function() {
+    $('.creators-slider .next-link').click(function () {
         $('.creators-slider').trigger('next.owl.carousel');
     })
 });

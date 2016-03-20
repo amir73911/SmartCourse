@@ -3182,17 +3182,31 @@ select {
     border-radius: 0;
     margin: 0.1875rem 0.125rem;
     outline: none;
-    border: 2px solid transparent; }
+    border: 2px solid transparent;
+    position: relative; }
+    .reviews-slider-thumb .owl-thumb-item:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.4); }
     @media screen and (min-width: 40em) {
       .reviews-slider-thumb .owl-thumb-item {
         width: 10%; } }
     .reviews-slider-thumb .owl-thumb-item.active {
       border-color: #999; }
-      .reviews-slider-thumb .owl-thumb-item.active img {
-        opacity: 1; }
+    .reviews-slider-thumb .owl-thumb-item span {
+      position: absolute;
+      left: 2px;
+      bottom: 0;
+      max-width: 100%;
+      font-size: 0.75rem;
+      color: #fff; }
     .reviews-slider-thumb .owl-thumb-item img {
       max-height: 100%;
-      opacity: .7;
       transition: opacity 0.3s ease; }
 
 .tags-list {
