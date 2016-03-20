@@ -20,6 +20,12 @@ $(document).ready(function() {
         $('#map_canvas').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
     });
 
+    $(document).on('update.zf.magellan', function (e, r) {
+        var id = $(r[0]).attr('href');
+        $('.answer').removeClass('active');
+        $(id).addClass('active');
+    });
+
 });
 
 //= partials/vtabs.js

@@ -6,18 +6,18 @@
       font-size: $base-small-font-size
       padding-bottom: 1em
       position: relative
-      &.active:before
-        content: ""
-        display: block
-        position: absolute
-        left: -$hand-width - 10px
-        top: 3px
-        +sprite($hand)
 
       a
         color: $black
         &:hover
           text-decoration: underline
+        &.active:before
+          content: ""
+          display: block
+          position: absolute
+          left: -$hand-width - 10px
+          top: 3px
+          +sprite($hand)
 
   .answers
 
