@@ -3558,6 +3558,9 @@ section {
     padding-left: 0;
     padding-right: 0; }
 
+.scrolloff {
+  pointer-events: none; }
+
 .course-steps h1, .course-steps .course-slider-item-title, .course-steps .price-list .price, .price-list .course-steps .price {
   margin-bottom: 0.5rem; }
 
