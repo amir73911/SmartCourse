@@ -2640,12 +2640,12 @@ select {
   vertical-align: middle; }
   .icon.icon-vk {
     background-image: url(../images/sprite.png);
-    background-position: -198px -148px;
+    background-position: -199px -98px;
     width: 32px;
     height: 32px; }
   .icon.icon-tw {
     background-image: url(../images/sprite.png);
-    background-position: -199px -98px;
+    background-position: -198px -148px;
     width: 32px;
     height: 32px; }
   .icon.icon-fb {
@@ -2660,7 +2660,7 @@ select {
     height: 32px; }
   .icon.icon-metro {
     background-image: url(../images/sprite.png);
-    background-position: -276px -32px;
+    background-position: -276px -62px;
     width: 28px;
     height: 20px; }
   .icon.icon-i {
@@ -2720,22 +2720,22 @@ select {
     height: 26px; }
   .icon.icon-search-btn {
     background-image: url(../images/sprite.png);
-    background-position: -292px -72px;
+    background-position: -292px -122px;
     width: 16px;
     height: 16px; }
   .icon.icon-check {
     background-image: url(../images/sprite.png);
-    background-position: -294px -52px;
+    background-position: -294px -102px;
     width: 8px;
     height: 15px; }
   .icon.icon-larr {
     background-image: url(../images/sprite.png);
-    background-position: -276px -97px;
+    background-position: -276px -138px;
     width: 21px;
     height: 9px; }
   .icon.icon-rarr {
     background-image: url(../images/sprite.png);
-    background-position: -276px -88px;
+    background-position: -276px -147px;
     width: 21px;
     height: 9px; }
   .icon.icon-icon1 {
@@ -2790,14 +2790,24 @@ select {
     height: 22px; }
   .icon.icon-yd {
     background-image: url(../images/sprite.png);
-    background-position: -276px -52px;
+    background-position: -276px -102px;
     width: 18px;
     height: 20px; }
   .icon.icon-star {
     background-image: url(../images/sprite.png);
-    background-position: -276px -72px;
+    background-position: -276px -122px;
     width: 16px;
     height: 16px; }
+  .icon.icon-download {
+    background-image: url(../images/sprite.png);
+    background-position: -276px -32px;
+    width: 31px;
+    height: 30px; }
+  .icon.icon-video {
+    background-image: url(../images/sprite.png);
+    background-position: -276px -82px;
+    width: 27px;
+    height: 20px; }
 
 .side-nav {
   padding-bottom: 0.5rem; }
@@ -3026,7 +3036,7 @@ select {
         top: 0;
         display: block;
         background-image: url(../images/sprite.png);
-        background-position: -294px -52px;
+        background-position: -294px -102px;
         width: 8px;
         height: 15px; }
   .article-categories a {
@@ -3090,7 +3100,7 @@ select {
     vertical-align: middle;
     margin-right: 0.5rem;
     background-image: url(../images/sprite.png);
-    background-position: -276px -97px;
+    background-position: -276px -138px;
     width: 21px;
     height: 9px; }
 
@@ -3102,7 +3112,7 @@ select {
     vertical-align: middle;
     margin-left: 0.5rem;
     background-image: url(../images/sprite.png);
-    background-position: -276px -88px;
+    background-position: -276px -147px;
     width: 21px;
     height: 9px; }
 
@@ -3119,7 +3129,7 @@ select {
   .articles-best h5:before {
     content: "";
     background-image: url(../images/sprite.png);
-    background-position: -276px -72px;
+    background-position: -276px -122px;
     width: 16px;
     height: 16px;
     display: block;
@@ -3246,6 +3256,12 @@ select {
   .tag:hover {
     color: #baa788;
     background: rgba(186, 167, 136, 0.1); }
+  .tag.tag-image {
+    border: 0;
+    padding: 0;
+    vertical-align: bottom; }
+    .tag.tag-image .icon {
+      display: block; }
 
 .course-image-scroller {
   overflow: hidden; }
@@ -3651,7 +3667,7 @@ section {
     padding: 0;
     font-size: 0;
     background-image: url(../images/sprite.png);
-    background-position: -292px -72px;
+    background-position: -292px -122px;
     width: 16px;
     height: 16px; }
 
@@ -3685,6 +3701,9 @@ section {
   .image-gallery img:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: scale(1.1); }
+
+.equalizer {
+  margin-bottom: 1rem; }
 
 .coop-steps .inner {
   padding-right: 1rem; }
