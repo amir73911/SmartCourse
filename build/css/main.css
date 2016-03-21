@@ -3972,19 +3972,25 @@ footer {
     @media screen and (min-width: 40em) {
       .contact-form h2, .contact-form .review-slider-name, .contact-form .peoples-slider .peoples-slider-title, .peoples-slider .contact-form .peoples-slider-title, .contact-form .form-success-plane p, .contact-form .event-title {
         font-size: 3rem; } }
+  .contact-form .checkboxes {
+    margin-bottom: 2rem; }
   .contact-form form {
     text-align: left; }
+    .contact-form form.bordered-form {
+      border-right: 1px solid #baa788; }
     @media screen and (min-width: 40em) {
       .contact-form form {
-        padding: 2rem; } }
+        margin: 2rem 0;
+        padding: 0 2rem; } }
     @media screen and (min-width: 61.25em) {
       .contact-form form {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         padding-right: 4rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        padding-left: 4rem; } }
+        padding-left: 6rem; } }
   .contact-form .button {
-    margin: 1rem 0; }
+    margin-top: 1rem;
+    margin-bottom: 0; }
   .contact-form .small-width-input {
     width: 20%;
     display: inline-block; }

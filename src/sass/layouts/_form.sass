@@ -28,7 +28,6 @@
         @extend h2
         font-weight: normal
 
-
   &.success
     .form-success-plane
       left: 0
@@ -48,21 +47,31 @@
     +breakpoint(medium)
       font-size: rem-calc(48)
 
+  .checkboxes
+    margin-bottom: $vertical-gutter * 2
+
   form
     text-align: left
 
+    &.bordered-form
+      border-right: 1px solid $color-brown
+
     +breakpoint(medium)
-      padding: $vertical-gutter * 2
+      margin: ($vertical-gutter * 2) 0
+      padding: 0 ($vertical-gutter * 2)
 
     +breakpoint(large)
-      padding:
-        right: $vertical-gutter * 4
+      margin:
         top: $vertical-gutter * 2
         bottom: $vertical-gutter * 2
-        left: $vertical-gutter * 4
+      padding:
+        right: $vertical-gutter * 4
+        left: $vertical-gutter * 6
 
   .button
-    margin: $vertical-gutter 0
+    margin:
+      top: $vertical-gutter
+      bottom: 0
 
   .small-width-input
     width: 20%
@@ -111,8 +120,6 @@
     .ticket-caption-title
       text-transform: uppercase
       font-size: rem-calc(13)
-
-
 
   +breakpoint(small only)
     [type='file'],
