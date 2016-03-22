@@ -2895,12 +2895,14 @@ select {
 .vtabs .vtab {
   display: none; }
 
-.facts span {
-  font-family: "Jannon";
-  font-weight: bold;
-  font-size: 2.25rem;
-  line-height: 1;
-  display: block; }
+.facts {
+  padding: 1rem 0; }
+  .facts span {
+    font-family: "Jannon";
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 1;
+    display: block; }
 
 .tabs-content .tabs-panel {
   display: none; }
@@ -3424,7 +3426,7 @@ select {
         padding-top: 1rem;
         padding-bottom: 1rem;
         padding-left: 2rem;
-        padding-right: 9rem; } }
+        padding-right: 10rem; } }
   .bubble-reviews-item .bubble-reviews-item-smile {
     font-size: 5.625rem;
     line-height: 11rem;
@@ -3435,7 +3437,7 @@ select {
     line-height: 2.5rem;
     display: inline-block; }
   .bubble-reviews-item .review-text:before {
-    left: -15px;
+    left: -25px;
     top: -10px; }
   .bubble-reviews-item .review-text:after {
     padding-left: 0.25rem;
@@ -3444,6 +3446,9 @@ select {
 
 * {
   box-sizing: border-box; }
+
+body {
+  font-size: 0.9375rem; }
 
 main {
   padding-bottom: 4rem; }
@@ -3978,6 +3983,9 @@ footer {
     text-align: left; }
     .contact-form form.bordered-form {
       border-right: 1px solid #baa788; }
+      .contact-form form.bordered-form > .row > .column:first-child, .contact-form form.bordered-form > .row > .columns:first-child {
+        padding-right: 0;
+        padding-left: 3rem; }
     @media screen and (min-width: 40em) {
       .contact-form form {
         margin: 2rem 0;

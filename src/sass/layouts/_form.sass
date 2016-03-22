@@ -56,6 +56,12 @@
     &.bordered-form
       border-right: 1px solid $color-brown
 
+      &>.row
+        &>.column:first-child
+          padding:
+            right: 0
+            left: $vertical-gutter * 3
+
     +breakpoint(medium)
       margin: ($vertical-gutter * 2) 0
       padding: 0 ($vertical-gutter * 2)

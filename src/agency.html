@@ -10,16 +10,18 @@
 <section class="wide big-banner big-banner-map">
 
     <div class="background-video">
-        <iframe frameborder="0" height="100%" width="100%"
-                src="https://youtube.com/embed/DhrzNPin_w4?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&enablejsapi=1&playlist=DhrzNPin_w4">
-        </iframe>
+        <video autoplay poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+            <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+            <source src="//smartcourse.walkers-studio.ru/bitrix/videosmartwebm.webm" type="video/webm">
+            <source src="//smartcourse.walkers-studio.ru/bitrix/videosmartmp4.mp4" type="video/mp4">
+        </video>
     </div>
 
     //= template/header-revert.html
 
     <div class="container">
         <h1>Региональное представительство Cмарт Курс</h1>
-        <div class="features row">
+        <div class="features row" style="margin-top: -70px;">
             <div class="columns medium-6 large-4">
                 <div class="row medium-up-2">
                     <div class="features-item columns">
@@ -43,7 +45,7 @@
                 </div>
             </div>
             <div class="columns medium-6 large-7 large-offset-1">
-                <img src="images/content/map-white.png" alt="map">
+                <img src="images/content/map-white.png" alt="map" style="margin-top: -30px;">
             </div>
         </div>
     </div>
