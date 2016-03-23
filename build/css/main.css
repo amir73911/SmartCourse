@@ -2645,22 +2645,22 @@ select {
     height: 32px; }
   .icon.icon-tw {
     background-image: url(../images/sprite.png);
-    background-position: -198px -148px;
+    background-position: -276px 0px;
     width: 32px;
     height: 32px; }
   .icon.icon-fb {
     background-image: url(../images/sprite.png);
-    background-position: -276px 0px;
+    background-position: -276px -32px;
     width: 32px;
     height: 32px; }
   .icon.icon-yt {
     background-image: url(../images/sprite.png);
-    background-position: -231px -147px;
+    background-position: -198px -148px;
     width: 32px;
     height: 32px; }
   .icon.icon-metro {
     background-image: url(../images/sprite.png);
-    background-position: -276px -62px;
+    background-position: -276px -124px;
     width: 28px;
     height: 20px; }
   .icon.icon-i {
@@ -2720,22 +2720,22 @@ select {
     height: 26px; }
   .icon.icon-search-btn {
     background-image: url(../images/sprite.png);
-    background-position: -292px -122px;
+    background-position: -292px -184px;
     width: 16px;
     height: 16px; }
   .icon.icon-check {
     background-image: url(../images/sprite.png);
-    background-position: -294px -102px;
+    background-position: -294px -164px;
     width: 8px;
     height: 15px; }
   .icon.icon-larr {
     background-image: url(../images/sprite.png);
-    background-position: -276px -138px;
+    background-position: -276px -209px;
     width: 21px;
     height: 9px; }
   .icon.icon-rarr {
     background-image: url(../images/sprite.png);
-    background-position: -276px -147px;
+    background-position: -276px -200px;
     width: 21px;
     height: 9px; }
   .icon.icon-icon1 {
@@ -2780,7 +2780,7 @@ select {
     height: 45px; }
   .icon.icon-visa {
     background-image: url(../images/sprite.png);
-    background-position: -231px -179px;
+    background-position: -231px -177px;
     width: 40px;
     height: 13px; }
   .icon.icon-mastercard {
@@ -2790,24 +2790,34 @@ select {
     height: 22px; }
   .icon.icon-yd {
     background-image: url(../images/sprite.png);
-    background-position: -276px -102px;
+    background-position: -276px -164px;
     width: 18px;
     height: 20px; }
   .icon.icon-star {
     background-image: url(../images/sprite.png);
-    background-position: -276px -122px;
+    background-position: -276px -184px;
     width: 16px;
     height: 16px; }
   .icon.icon-download {
     background-image: url(../images/sprite.png);
-    background-position: -276px -32px;
+    background-position: -276px -94px;
     width: 31px;
     height: 30px; }
   .icon.icon-video {
     background-image: url(../images/sprite.png);
-    background-position: -276px -82px;
+    background-position: -276px -144px;
     width: 27px;
     height: 20px; }
+  .icon.icon-download-white {
+    background-image: url(../images/sprite.png);
+    background-position: -276px -64px;
+    width: 31px;
+    height: 30px; }
+  .icon.icon-video-white {
+    background-image: url(../images/sprite.png);
+    background-position: -231px -147px;
+    width: 41px;
+    height: 30px; }
 
 .side-nav {
   padding-bottom: 0.5rem; }
@@ -3038,7 +3048,7 @@ select {
         top: 0;
         display: block;
         background-image: url(../images/sprite.png);
-        background-position: -294px -102px;
+        background-position: -294px -164px;
         width: 8px;
         height: 15px; }
   .article-categories a {
@@ -3102,7 +3112,7 @@ select {
     vertical-align: middle;
     margin-right: 0.5rem;
     background-image: url(../images/sprite.png);
-    background-position: -276px -138px;
+    background-position: -276px -209px;
     width: 21px;
     height: 9px; }
 
@@ -3114,7 +3124,7 @@ select {
     vertical-align: middle;
     margin-left: 0.5rem;
     background-image: url(../images/sprite.png);
-    background-position: -276px -147px;
+    background-position: -276px -200px;
     width: 21px;
     height: 9px; }
 
@@ -3131,7 +3141,7 @@ select {
   .articles-best h5:before {
     content: "";
     background-image: url(../images/sprite.png);
-    background-position: -276px -122px;
+    background-position: -276px -184px;
     width: 16px;
     height: 16px;
     display: block;
@@ -3672,7 +3682,7 @@ section {
     padding: 0;
     font-size: 0;
     background-image: url(../images/sprite.png);
-    background-position: -292px -122px;
+    background-position: -292px -184px;
     width: 16px;
     height: 16px; }
 
