@@ -3717,6 +3717,30 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: scale(1.1); }
 
+.factoids .active .date {
+  color: #f26b3e; }
+
+.factoids .date {
+  font-family: "Jannon";
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1; }
+  .factoids .date span {
+    font-size: 2.25rem; }
+
+.factoids a {
+  font-size: 0.75rem;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: top;
+  border-bottom: 1px dashed #29a3f9; }
+
+.factoids .note {
+  color: #f26b3e;
+  font-family: "Jannon";
+  font-size: 1.25rem;
+  font-weight: bold; }
+
 .equalizer {
   margin-bottom: 1rem; }
 
