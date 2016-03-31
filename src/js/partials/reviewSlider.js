@@ -21,7 +21,6 @@ $(document).ready(function () {
                 eq = $slide.parents('.owl-item').index();
 
             if ($slide.data('slideName')) {
-                console.log(eq);
                 $dots.eq(eq).append('<span>' + $slide.data('slideName') + '</span>');
             }
         });
