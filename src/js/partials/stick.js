@@ -20,13 +20,13 @@ $(document).ready(function () {
 
 
             if (offset <= 0) {
-                $obj.css('marginTop', -offset);
+                if (anchorHeight - (Math.abs(offset) + objHeight) < 0) {
+                    $obj.css('marginTop', anchorHeight - objHeight);
+                } else {
+                    $obj.css('marginTop', -offset);
+                }
             } else {
                 $obj.css('marginTop', 0);
-            }
-
-            if (anchorHeight - (Math.abs(offset) + objHeight) < 0) {
-                $obj.css('marginTop', anchorHeight - objHeight);
             }
         });
 
