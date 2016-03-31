@@ -1,11 +1,19 @@
 $(document).ready(function () {
 
     var $blackHeadBlock = $('.black-head-block'),
+        $whiteHeadBlock = $('.white-head-block'),
         blackHeadBlockHeight = $blackHeadBlock.height();
 
     $(document).scroll(function () {
 
-        $blackHeadBlock.css('height', blackHeadBlockHeight - ($(window).scrollTop() * 4) );
+        if (blackHeadBlockHeight - $(window).scrollTop() > 0) {
+            $whiteHeadBlock.css('marginTop', -(blackHeadBlockHeight - $(window).scrollTop()) );
+        } else {
+            $whiteHeadBlock.css('marginTop', 0 );
+        }
+
+
+
 
     });
 

@@ -4212,12 +4212,9 @@ footer {
     margin: 0; }
 
 .black-head-block {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  z-index: 1;
-  overflow: hidden; }
+  z-index: 1; }
   .black-head-block section {
     background: #191f28 url("../images/content/questions.jpg") center top no-repeat;
     color: #fff;
