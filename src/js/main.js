@@ -29,7 +29,7 @@ $(document).ready(function() {
 });
 
 //= partials/vtabs.js
-//= partials/faq.js
+// partials/faq.js
 //= partials/courseSlider.js
 //= partials/reviewSlider.js
 //= partials/courseImageScroller.js
