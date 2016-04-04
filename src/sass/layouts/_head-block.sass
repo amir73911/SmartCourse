@@ -1,0 +1,81 @@
+.choice-system
+  width: 100%
+  height: 100vh
+  margin-bottom: 110vh
+
+  &.fixed
+    .white-bg,
+      position: fixed
+      width: 100%
+
+    .white-bg
+      top: 0
+      margin-top: 0
+
+    .black-bg
+      position: relative
+      z-index: 5
+      display: block
+      overflow: hidden
+
+  header,
+  .white-bg
+    position: absolute
+    left: 0
+    width: 100%
+    top: 0
+
+  header
+    margin-bottom: 0
+    z-index: 5
+
+  .attributes-block
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+
+    section
+      margin-bottom: 20px
+
+  .white-bg
+    background: url('/src/images/content/man-back.png') center top no-repeat
+    z-index: 3
+    height: 100vh
+    padding-top: 97px
+    margin-top: 110vh
+
+    .man-black
+      position: relative
+      top: -90px
+      left: -13px
+
+  .black-bg
+    display: none
+    width: 100%
+    height: 100vh
+    background-color: #191f28
+    background-image: url('../images/content/questions.jpg')
+    background-repeat: no-repeat
+    background-position: center top
+
+    .attributes-block
+      color: $white
+
+    header
+      .phone
+        color: $white
+
+// .black-head-block
+//   position: relative
+//   //top: 0
+//   //left: 0
+//   width: 100%
+//   z-index: 1
+//   //overflow: hidden
+//
+//   section
+//
+//     color: $white
+//     margin-bottom: 0
+//

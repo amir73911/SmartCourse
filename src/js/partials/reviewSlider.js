@@ -8,6 +8,7 @@ $(document).ready(function () {
         thumbs: true,
         thumbsPrerendered: true,
         thumbImage: true,
+        autoHeight: true,
         onInitialized: setDotsNames
     });
 
