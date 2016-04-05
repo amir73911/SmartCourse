@@ -4400,6 +4400,16 @@ footer {
     .choice-system .black-bg header .phone {
       color: #fff; }
 
+@media screen and (max-height: 800px) {
+  .choice-system .white-bg h1, .choice-system .white-bg .course-slider-item-title, .choice-system .white-bg .price-list .price, .price-list .choice-system .white-bg .price {
+    font-size: 2.5rem; }
+  .choice-system .white-bg h2, .choice-system .white-bg .review-slider-name, .choice-system .white-bg .peoples-slider .peoples-slider-title, .peoples-slider .choice-system .white-bg .peoples-slider-title, .choice-system .white-bg .contact-form .form-success-plane p, .contact-form .form-success-plane .choice-system .white-bg p, .choice-system .white-bg .event-title {
+    font-size: 1.6rem; }
+  .choice-system .white-bg h5 {
+    font-size: .8rem; }
+  .choice-system .white-bg p {
+    font-size: .8rem; } }
+
 .learning-program {
   background-color: #f4f1ec; }
   .learning-program.fixed {
