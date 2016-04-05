@@ -1,21 +1,29 @@
 $(document).ready(function () {
 
     // Reviews Main Slider
-    $('.reviews-slider-main').owlCarousel({
+    $reviewsSlider = $('.reviews-slider-main');
+
+    $reviewsSlider.owlCarousel({
         items: 1,
         nav: false,
         dots: false,
         thumbs: true,
         thumbsPrerendered: true,
         thumbImage: true,
-        autoHeight: true,
-        onInitialized: setDotsNames
+        onInitialized: onInitialized
     });
 
-    function setDotsNames(event) {
+    function onInitialized(event) {
         var $container = $(event.target),
             $items = $container.find('.reviews-slider-main-item'),
+						$itemContainers = $container.find('.owl-item')
             $dots = $container.parent('.reviews-slider').find('.owl-thumb-item');
+
+				var sliderHeight = $reviewsSlider.height();
+
+				$itemContainers.each(function() {
+					$(this).css('height', sliderHeight + 'px');
+				});
 
         $items.each(function () {
             var $slide = $(this),

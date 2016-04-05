@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    if (!$('.choice-system').length) return;
+
     var $headBlock = $('.choice-system'),
         $blackBgBlock = $headBlock.find('.black-bg'),
         $blackAttrsBlock = $blackBgBlock.find('.attributes-block'),
