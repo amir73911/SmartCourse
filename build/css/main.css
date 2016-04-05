@@ -3199,6 +3199,7 @@ select {
   background: #000; }
 
 .reviews-slider-main-item {
+  height: 100%;
   padding: 1rem;
   background: no-repeat center top;
   background-size: cover; }
