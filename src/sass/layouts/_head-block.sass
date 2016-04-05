@@ -1,7 +1,5 @@
 .choice-system
   width: 100%
-  height: 100vh
-  margin-bottom: 110vh
 
   &.fixed
     .white-bg,
@@ -219,3 +217,29 @@
 
         p
           font-size: .8rem
+
+.choice-system-full
+  display: none
+
+  +tablet
+    display: block
+    height: 100vh
+    margin-bottom: 110vh
+
+.choice-system-mobile
+  display: block
+
+  header,
+  .white-bg
+    position: static
+
+  .white-bg
+    margin-top: 0
+    height: auto
+    padding-top: 0
+
+    .attributes-block
+      position: static
+
+  +tablet
+    display: none

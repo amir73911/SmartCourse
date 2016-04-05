@@ -10097,7 +10097,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     if (!$('.choice-system').length) return;
 
-    var $headBlock = $('.choice-system'),
+    var $headBlock = $('.choice-system-full'),
         $blackBgBlock = $headBlock.find('.black-bg'),
         $blackAttrsBlock = $blackBgBlock.find('.attributes-block'),
         $blackHeaderBlock = $blackBgBlock.find('header'),
@@ -10112,7 +10112,7 @@ $(document).ready(function () {
     var windowHeight = $window.height(),
         windowWidth = $window.width(),
         initialScrollVal = $('body').scrollTop(),
-        mobileWidth = 320,
+        tabletWidth = 768,
         learningProgramScrollStart = $learningProgramBlock.offset().top,
         learningProgramHeight = 804,
         pathOffset = 2800 - windowWidth, // 2800 - path image width
@@ -10128,7 +10128,7 @@ $(document).ready(function () {
     $document.trigger('scroll');
 
     function handleHeaderCurtainScroll(e) {
-      if (windowWidth <= mobileWidth) return;
+      if (windowWidth < tabletWidth) return;
 
       var scrollVal = $document.scrollTop(),
           BGPPropVal = 'center ' + scrollVal + 'px',
@@ -10148,6 +10148,8 @@ $(document).ready(function () {
     }
 
     function handleHeaderPathScroll(e) {
+      if (windowWidth < tabletWidth) return;
+
       var scrollVal = $document.scrollTop(),
           pathScroll = learningProgramScrollStart - scrollVal;
 
