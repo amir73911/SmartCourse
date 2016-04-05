@@ -10101,6 +10101,7 @@ $(document).ready(function () {
         $blackBgBlock = $headBlock.find('.black-bg'),
         $blackAttrsBlock = $blackBgBlock.find('.attributes-block'),
         $blackHeaderBlock = $blackBgBlock.find('header'),
+        $layerContent = $blackBgBlock.find('.layer-content'),
         $learningProgramBlock = $('.learning-program'),
         $courseImageScroller = $('.course-image-scroller'),
         $whatYouGetBlock = $('.what-you-get'),
@@ -10135,8 +10136,9 @@ $(document).ready(function () {
           BTPropVal = -scrollVal + 'px';
 
       $blackBgBlock.css('background-position', BGPPropVal);
-      $blackAttrsBlock.css('bottom', BTPropVal)
-      $blackHeaderBlock.css('margin-top', MGTPropVal)
+      $blackAttrsBlock.css('bottom', BTPropVal);
+      $blackHeaderBlock.css('margin-top', MGTPropVal);
+      $layerContent.css('margin-top', MGTPropVal);
 
       if (scrollVal >= windowHeight * 1.1) {
         $headBlock.removeClass('fixed');
