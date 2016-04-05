@@ -4401,13 +4401,13 @@ footer {
       color: #fff; }
 
 @media screen and (max-height: 800px) {
-  .choice-system .white-bg h1, .choice-system .white-bg .course-slider-item-title, .choice-system .white-bg .price-list .price, .price-list .choice-system .white-bg .price {
+  .choice-system .white-bg .layer-content h1, .choice-system .white-bg .layer-content .course-slider-item-title, .choice-system .white-bg .layer-content .price-list .price, .price-list .choice-system .white-bg .layer-content .price {
     font-size: 2.5rem; }
-  .choice-system .white-bg h2, .choice-system .white-bg .review-slider-name, .choice-system .white-bg .peoples-slider .peoples-slider-title, .peoples-slider .choice-system .white-bg .peoples-slider-title, .choice-system .white-bg .contact-form .form-success-plane p, .contact-form .form-success-plane .choice-system .white-bg p, .choice-system .white-bg .event-title {
+  .choice-system .white-bg .layer-content h2, .choice-system .white-bg .layer-content .review-slider-name, .choice-system .white-bg .layer-content .peoples-slider .peoples-slider-title, .peoples-slider .choice-system .white-bg .layer-content .peoples-slider-title, .choice-system .white-bg .layer-content .contact-form .form-success-plane p, .contact-form .form-success-plane .choice-system .white-bg .layer-content p, .choice-system .white-bg .layer-content .event-title {
     font-size: 1.6rem; }
-  .choice-system .white-bg h5 {
+  .choice-system .white-bg .layer-content h5 {
     font-size: .8rem; }
-  .choice-system .white-bg p {
+  .choice-system .white-bg .layer-content p {
     font-size: .8rem; } }
 
 .learning-program {
