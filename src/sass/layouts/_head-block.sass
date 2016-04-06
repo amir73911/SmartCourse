@@ -1,7 +1,5 @@
 .choice-system
   width: 100%
-  height: 100vh
-  margin-bottom: 110vh
 
   &.fixed
     .white-bg,
@@ -13,7 +11,6 @@
       margin-top: 0
 
     .black-bg
-      position: relative
       z-index: 5
       display: block
       overflow: hidden
@@ -38,26 +35,165 @@
     section
       margin-bottom: 20px
 
+  .man-image
+    position: absolute
+    left: 49%
+    transform: translateX(-50%)
+    top: 40px
+
   .white-bg
-    background: url('/src/images/content/man-back.png') center top no-repeat
+    background: url('../images/content/man-back.png') center top no-repeat
     z-index: 3
     height: 100vh
     padding-top: 97px
     margin-top: 110vh
 
-    .man-black
-      position: relative
-      top: -90px
-      left: -13px
-
   .black-bg
     display: none
     width: 100%
     height: 100vh
-    background-color: #191f28
-    background-image: url('../images/content/questions.jpg')
-    background-repeat: no-repeat
-    background-position: center top
+    position: relative
+    padding-top: 97px
+    background: #191f28 url('../images/content/man-back-black.png') center top no-repeat
+
+    .layer-content
+      font-family: "Jannon"
+      font-style: italic
+      color: #fff
+      position: relative
+      height: 100%
+
+      .question-item
+        position: absolute
+        cursor: default
+        white-space: nowrap
+        margin-top: -97px
+
+        .question-text
+          font-size: 48px
+          font-weight: bold
+
+        .sub-question-item
+          font-size: 15px
+          color: #515358
+          position: absolute
+
+        &.item-1
+          left: 25%
+          top: 15%
+
+          .sub-question-item
+            &.item-1
+              left: -100%
+              top: -40%
+
+            &.item-2
+              left: 50%
+              top: -20%
+
+            &.item-3
+              left: 125%
+              top: 45%
+
+            &.item-4
+              left: -120%
+              top: 50%
+
+            &.item-5
+              bottom: -25%
+              left: 50%
+
+        &.item-2
+          left: 5%
+          top: 34%
+
+          .sub-question-item
+            &.item-1
+              left: 0
+              top: -75%
+
+            &.item-2
+              left: 40%
+              top: -37%
+
+            &.item-3
+              left: -15%
+              top: 100%
+
+            &.item-4
+              left: 55%
+              top: 120%
+
+        &.item-3
+          left: 17%
+          top: 54%
+
+          .sub-question-item
+            &.item-1
+              left: -71%
+              top: -44%
+
+            &.item-2
+              left: -115%
+              top: 40%
+
+            &.item-3
+              left: -60%
+              top: 100%
+
+            &.item-4
+              left: 85%
+              top: 80%
+
+        &.item-4
+          left: 68%
+          top: 23%
+
+          .sub-question-item
+            &.item-1
+              left: 40%
+              top: -105%
+
+            &.item-2
+              left: 76%
+              top: -60%
+
+            &.item-3
+              left: -19%
+              top: -38%
+
+            &.item-4
+              left: 22%
+              top: 90%
+
+            &.item-5
+              left: 5%
+              top: 130%
+
+            &.item-6
+              left: 73%
+              top: 130%
+
+        &.item-5
+          left: 64%
+          top: 47%
+
+          .sub-question-item
+            &.item-1
+              left: 82%
+              top: -65%
+
+            &.item-2
+              left: -5%
+              top: -25%
+
+            &.item-3
+              left: 80%
+              top: 105%
+
+            &.item-4
+              left: 10%
+              top: 135%
 
     .attributes-block
       color: $white
@@ -66,16 +202,44 @@
       .phone
         color: $white
 
-// .black-head-block
-//   position: relative
-//   //top: 0
-//   //left: 0
-//   width: 100%
-//   z-index: 1
-//   //overflow: hidden
-//
-//   section
-//
-//     color: $white
-//     margin-bottom: 0
-//
+@media screen and (max-height: 800px)
+  .choice-system
+    .white-bg
+      .layer-content
+        h1
+          font-size: 2.5rem
+
+        h2
+          font-size: 1.6rem
+
+        h5
+          font-size: .8rem
+
+        p
+          font-size: .8rem
+
+.choice-system-full
+  display: none
+
+  +tablet
+    display: block
+    height: 100vh
+    margin-bottom: 110vh
+
+.choice-system-mobile
+  display: block
+
+  header,
+  .white-bg
+    position: static
+
+  .white-bg
+    margin-top: 0
+    height: auto
+    padding-top: 0
+
+    .attributes-block
+      position: static
+
+  +tablet
+    display: none

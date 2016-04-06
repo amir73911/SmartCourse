@@ -9874,11 +9874,11 @@ $(document).ready(function() {
         $('#map_canvas').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
     });
 
-    $(document).on('update.zf.magellan', function (e, r) {
-        var id = $(r[0]).attr('href');
-        $('.answer').removeClass('active');
-        $(id).addClass('active');
-    });
+    // $(document).on('update.zf.magellan', function (e, r) {
+    //     var id = $(r[0]).attr('href');
+    //     $('.answer').removeClass('active');
+    //     $(id).addClass('active');
+    // });
 
 });
 
@@ -9949,7 +9949,54 @@ $(document).ready(function () {
     });
 
 });
-// partials/faq.js
+$(document).ready(function () {
+    if (!$('.faq').length) return;
+
+    // FAQ
+    var $document = $(document),
+        $faqContainer = $('.faq'),
+        $faqQuestions = $faqContainer.find('.questions li'),
+        $faqLinks = $faqContainer.find('.questions a'),
+        $faqAnswers = $faqContainer.find('.answer'),
+        $questionLinks = $faqQuestions.find('a'),
+        answersArr = [],
+        currentAnswer;
+
+    $faqAnswers.each(function() {
+      answersArr.push($(this));
+    });
+
+    $(document).on('scroll', function() {
+      var topOffset = $document.scrollTop();
+
+      currentAnswer = answersArr[0];
+
+      $questionLinks.removeClass('active');
+
+      for (var index in answersArr) {
+        answersArr[index].removeClass('active');
+
+        if (topOffset > (answersArr[index].offset().top - 40))
+          currentAnswer = answersArr[index];
+      }
+
+      currentAnswer.addClass('active');
+      $questionLinks.filter('[href="#' + currentAnswer.attr('id') + '"]').addClass('active');
+    });
+
+    $faqLinks.click(function (e) {
+        e.preventDefault();
+
+        var $link = $(this),
+            target = $link.attr('href'),
+            $targetAnswer = $(target);
+
+        $('html, body').animate({
+          scrollTop: $targetAnswer.offset().top - 20
+        });
+    });
+
+});
 $(document).ready(function () {
 
     // Course Slider
@@ -9979,21 +10026,29 @@ function courseSliderCallback(event) {
 $(document).ready(function () {
 
     // Reviews Main Slider
-    $('.reviews-slider-main').owlCarousel({
+    $reviewsSlider = $('.reviews-slider-main');
+
+    $reviewsSlider.owlCarousel({
         items: 1,
         nav: false,
         dots: false,
         thumbs: true,
         thumbsPrerendered: true,
         thumbImage: true,
-        autoHeight: true,
-        onInitialized: setDotsNames
+        onInitialized: onInitialized
     });
 
-    function setDotsNames(event) {
+    function onInitialized(event) {
         var $container = $(event.target),
             $items = $container.find('.reviews-slider-main-item'),
+						$itemContainers = $container.find('.owl-item')
             $dots = $container.parent('.reviews-slider').find('.owl-thumb-item');
+
+				var sliderHeight = $reviewsSlider.height();
+
+				$itemContainers.each(function() {
+					$(this).css('height', sliderHeight + 'px');
+				});
 
         $items.each(function () {
             var $slide = $(this),
@@ -10040,10 +10095,13 @@ $(document).ready(function () {
     })
 });
 $(document).ready(function () {
-    var $headBlock = $('.choice-system'),
+    if (!$('.choice-system').length) return;
+
+    var $headBlock = $('.choice-system-full'),
         $blackBgBlock = $headBlock.find('.black-bg'),
         $blackAttrsBlock = $blackBgBlock.find('.attributes-block'),
         $blackHeaderBlock = $blackBgBlock.find('header'),
+        $layerContent = $blackBgBlock.find('.layer-content'),
         $learningProgramBlock = $('.learning-program'),
         $courseImageScroller = $('.course-image-scroller'),
         $whatYouGetBlock = $('.what-you-get'),
@@ -10054,7 +10112,7 @@ $(document).ready(function () {
     var windowHeight = $window.height(),
         windowWidth = $window.width(),
         initialScrollVal = $('body').scrollTop(),
-        mobileWidth = 320,
+        tabletWidth = 768,
         learningProgramScrollStart = $learningProgramBlock.offset().top,
         learningProgramHeight = 804,
         pathOffset = 2800 - windowWidth, // 2800 - path image width
@@ -10070,7 +10128,7 @@ $(document).ready(function () {
     $document.trigger('scroll');
 
     function handleHeaderCurtainScroll(e) {
-      if (windowWidth <= mobileWidth) return;
+      if (windowWidth < tabletWidth) return;
 
       var scrollVal = $document.scrollTop(),
           BGPPropVal = 'center ' + scrollVal + 'px',
@@ -10078,8 +10136,9 @@ $(document).ready(function () {
           BTPropVal = -scrollVal + 'px';
 
       $blackBgBlock.css('background-position', BGPPropVal);
-      $blackAttrsBlock.css('bottom', BTPropVal)
-      $blackHeaderBlock.css('margin-top', MGTPropVal)
+      $blackAttrsBlock.css('bottom', BTPropVal);
+      $blackHeaderBlock.css('margin-top', MGTPropVal);
+      $layerContent.css('margin-top', MGTPropVal);
 
       if (scrollVal >= windowHeight * 1.1) {
         $headBlock.removeClass('fixed');
@@ -10089,6 +10148,8 @@ $(document).ready(function () {
     }
 
     function handleHeaderPathScroll(e) {
+      if (windowWidth < tabletWidth) return;
+
       var scrollVal = $document.scrollTop(),
           pathScroll = learningProgramScrollStart - scrollVal;
 

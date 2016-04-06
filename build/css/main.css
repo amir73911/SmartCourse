@@ -3199,6 +3199,7 @@ select {
   background: #000; }
 
 .reviews-slider-main-item {
+  height: 100%;
   padding: 1rem;
   background: no-repeat center top;
   background-size: cover; }
@@ -4246,9 +4247,7 @@ footer {
     margin: 0; }
 
 .choice-system {
-  width: 100%;
-  height: 100vh;
-  margin-bottom: 110vh; }
+  width: 100%; }
   .choice-system.fixed .white-bg {
     position: fixed;
     width: 100%; }
@@ -4256,7 +4255,6 @@ footer {
     top: 0;
     margin-top: 0; }
   .choice-system.fixed .black-bg {
-    position: relative;
     z-index: 5;
     display: block;
     overflow: hidden; }
@@ -4276,28 +4274,163 @@ footer {
     width: 100%; }
     .choice-system .attributes-block section {
       margin-bottom: 20px; }
+  .choice-system .man-image {
+    position: absolute;
+    left: 49%;
+    transform: translateX(-50%);
+    top: 40px; }
   .choice-system .white-bg {
-    background: url("/src/images/content/man-back.png") center top no-repeat;
+    background: url("../images/content/man-back.png") center top no-repeat;
     z-index: 3;
     height: 100vh;
     padding-top: 97px;
     margin-top: 110vh; }
-    .choice-system .white-bg .man-black {
-      position: relative;
-      top: -90px;
-      left: -13px; }
   .choice-system .black-bg {
     display: none;
     width: 100%;
     height: 100vh;
-    background-color: #191f28;
-    background-image: url("../images/content/questions.jpg");
-    background-repeat: no-repeat;
-    background-position: center top; }
+    position: relative;
+    padding-top: 97px;
+    background: #191f28 url("../images/content/man-back-black.png") center top no-repeat; }
+    .choice-system .black-bg .layer-content {
+      font-family: "Jannon";
+      font-style: italic;
+      color: #fff;
+      position: relative;
+      height: 100%; }
+      .choice-system .black-bg .layer-content .question-item {
+        position: absolute;
+        cursor: default;
+        white-space: nowrap;
+        margin-top: -97px; }
+        .choice-system .black-bg .layer-content .question-item .question-text {
+          font-size: 48px;
+          font-weight: bold; }
+        .choice-system .black-bg .layer-content .question-item .sub-question-item {
+          font-size: 15px;
+          color: #515358;
+          position: absolute; }
+        .choice-system .black-bg .layer-content .question-item.item-1 {
+          left: 25%;
+          top: 15%; }
+          .choice-system .black-bg .layer-content .question-item.item-1 .sub-question-item.item-1 {
+            left: -100%;
+            top: -40%; }
+          .choice-system .black-bg .layer-content .question-item.item-1 .sub-question-item.item-2 {
+            left: 50%;
+            top: -20%; }
+          .choice-system .black-bg .layer-content .question-item.item-1 .sub-question-item.item-3 {
+            left: 125%;
+            top: 45%; }
+          .choice-system .black-bg .layer-content .question-item.item-1 .sub-question-item.item-4 {
+            left: -120%;
+            top: 50%; }
+          .choice-system .black-bg .layer-content .question-item.item-1 .sub-question-item.item-5 {
+            bottom: -25%;
+            left: 50%; }
+        .choice-system .black-bg .layer-content .question-item.item-2 {
+          left: 5%;
+          top: 34%; }
+          .choice-system .black-bg .layer-content .question-item.item-2 .sub-question-item.item-1 {
+            left: 0;
+            top: -75%; }
+          .choice-system .black-bg .layer-content .question-item.item-2 .sub-question-item.item-2 {
+            left: 40%;
+            top: -37%; }
+          .choice-system .black-bg .layer-content .question-item.item-2 .sub-question-item.item-3 {
+            left: -15%;
+            top: 100%; }
+          .choice-system .black-bg .layer-content .question-item.item-2 .sub-question-item.item-4 {
+            left: 55%;
+            top: 120%; }
+        .choice-system .black-bg .layer-content .question-item.item-3 {
+          left: 17%;
+          top: 54%; }
+          .choice-system .black-bg .layer-content .question-item.item-3 .sub-question-item.item-1 {
+            left: -71%;
+            top: -44%; }
+          .choice-system .black-bg .layer-content .question-item.item-3 .sub-question-item.item-2 {
+            left: -115%;
+            top: 40%; }
+          .choice-system .black-bg .layer-content .question-item.item-3 .sub-question-item.item-3 {
+            left: -60%;
+            top: 100%; }
+          .choice-system .black-bg .layer-content .question-item.item-3 .sub-question-item.item-4 {
+            left: 85%;
+            top: 80%; }
+        .choice-system .black-bg .layer-content .question-item.item-4 {
+          left: 68%;
+          top: 23%; }
+          .choice-system .black-bg .layer-content .question-item.item-4 .sub-question-item.item-1 {
+            left: 40%;
+            top: -105%; }
+          .choice-system .black-bg .layer-content .question-item.item-4 .sub-question-item.item-2 {
+            left: 76%;
+            top: -60%; }
+          .choice-system .black-bg .layer-content .question-item.item-4 .sub-question-item.item-3 {
+            left: -19%;
+            top: -38%; }
+          .choice-system .black-bg .layer-content .question-item.item-4 .sub-question-item.item-4 {
+            left: 22%;
+            top: 90%; }
+          .choice-system .black-bg .layer-content .question-item.item-4 .sub-question-item.item-5 {
+            left: 5%;
+            top: 130%; }
+          .choice-system .black-bg .layer-content .question-item.item-4 .sub-question-item.item-6 {
+            left: 73%;
+            top: 130%; }
+        .choice-system .black-bg .layer-content .question-item.item-5 {
+          left: 64%;
+          top: 47%; }
+          .choice-system .black-bg .layer-content .question-item.item-5 .sub-question-item.item-1 {
+            left: 82%;
+            top: -65%; }
+          .choice-system .black-bg .layer-content .question-item.item-5 .sub-question-item.item-2 {
+            left: -5%;
+            top: -25%; }
+          .choice-system .black-bg .layer-content .question-item.item-5 .sub-question-item.item-3 {
+            left: 80%;
+            top: 105%; }
+          .choice-system .black-bg .layer-content .question-item.item-5 .sub-question-item.item-4 {
+            left: 10%;
+            top: 135%; }
     .choice-system .black-bg .attributes-block {
       color: #fff; }
     .choice-system .black-bg header .phone {
       color: #fff; }
+
+@media screen and (max-height: 800px) {
+  .choice-system .white-bg .layer-content h1, .choice-system .white-bg .layer-content .course-slider-item-title, .choice-system .white-bg .layer-content .price-list .price, .price-list .choice-system .white-bg .layer-content .price {
+    font-size: 2.5rem; }
+  .choice-system .white-bg .layer-content h2, .choice-system .white-bg .layer-content .review-slider-name, .choice-system .white-bg .layer-content .peoples-slider .peoples-slider-title, .peoples-slider .choice-system .white-bg .layer-content .peoples-slider-title, .choice-system .white-bg .layer-content .contact-form .form-success-plane p, .contact-form .form-success-plane .choice-system .white-bg .layer-content p, .choice-system .white-bg .layer-content .event-title {
+    font-size: 1.6rem; }
+  .choice-system .white-bg .layer-content h5 {
+    font-size: .8rem; }
+  .choice-system .white-bg .layer-content p {
+    font-size: .8rem; } }
+
+.choice-system-full {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .choice-system-full {
+      display: block;
+      height: 100vh;
+      margin-bottom: 110vh; } }
+
+.choice-system-mobile {
+  display: block; }
+  .choice-system-mobile header,
+  .choice-system-mobile .white-bg {
+    position: static; }
+  .choice-system-mobile .white-bg {
+    margin-top: 0;
+    height: auto;
+    padding-top: 0; }
+    .choice-system-mobile .white-bg .attributes-block {
+      position: static; }
+  @media screen and (min-width: 768px) {
+    .choice-system-mobile {
+      display: none; } }
 
 .learning-program {
   background-color: #f4f1ec; }
@@ -4306,6 +4439,10 @@ footer {
     top: 0;
     left: 0;
     z-index: 5; }
+
+@media screen and (max-width: 767px) {
+  .what-you-get {
+    padding-top: 0 !important; } }
 
 .events-block-main {
   margin-bottom: 3rem; }
